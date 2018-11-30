@@ -1,9 +1,120 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "./variable";
+@import "./common";
+
+.main-component {
+  position: relative;
+}
+
+#sticky-header {
+  background: var(--base-color);
+  .wrapper {
+    padding: 1em;
+    .nav-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .logo {
+        width: 20%;
+        height: 3em;
+      }
+      .input-container {
+        width: 80%;
+        .input {
+          padding: 1em;
+          width: 100%;
+          font-size: 1em;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.2;
+          letter-spacing: normal;
+          text-align: left;
+          color: #727272;
+          box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.16);
+          background-color: #ffffff;
+          border-radius: 10px;
+          border: none;
+          &:focus,
+          &:hover {
+            outline: none;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+#menuBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e2e2e2;
+  .wrapper {
+    padding: 1em;
+    .menu-container {
+      .menu-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .list {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .menu-icon {
+            color: #383838;
+            font-size: 1.3em;
+          }
+          a {
+            margin-top: 0.2em;
+            color: #383838;
+            line-height: 1.2;
+          }
+        }
+      }
+    }
+  }
+}
+#home {
+  .container {
+    .wrapper {
+      .login-button-container {
+        width: 100%;
+        text-align: right;
+        padding: 1em;
+        .login-button {
+          font-weight: bold;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.2;
+          letter-spacing: normal;
+          text-align: left;
+          color: #ff0055;
+          border: 1px solid #ff0055;
+          border-radius: 5px;
+          background: #fff;
+          padding: 0.3em 0.8em;
+          font-size: 1.5em;
+        }
+      }
+      .main-content {
+        .content-container {
+          display: flex;
+          align-items: center;
+          .image-container {
+            flex: 1;
+            height: 100%;
+            min-height: 300px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+          }
+          .info-container {
+            flex: 1;
+          }
+        }
+      }
+    }
+  }
 }

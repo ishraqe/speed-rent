@@ -4,11 +4,11 @@ import MenuBar from "../component/StickyMenuBar";
 
 const AUX = props => {
   return (
-    <>
+    <div className="main-component">
       <Header />
       {props.children}
       <MenuBar />
-    </>
+    </div>
   );
 };
 
