@@ -19,6 +19,9 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <section className="login-button-container">
+        <button className="login-button">Login</button>
+      </section>
     </header>
   );
 };
