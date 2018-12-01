@@ -10,6 +10,9 @@
 .pad-top-2 {
   padding: 2em 1em;
 }
+.pad-top-4 {
+  padding: 4em 1em;
+}
 #sticky-header {
   background: var(--base-color);
   position: fixed;
@@ -93,12 +96,12 @@
           justify-content: center;
           align-items: center;
           .menu-icon {
-            color: #383838;
+            color: var(--font-color);
             font-size: 1.3em;
           }
           a {
             margin-top: 0.2em;
-            color: #383838;
+            color: var(--font-color);
             line-height: 1.2;
           }
         }
@@ -110,7 +113,7 @@
   margin-top: 8em;
   #main-content {
     .border {
-      background: #383838;
+      background: var(--font-color);
       height: 1px;
       margin: 1.2em;
     }
@@ -148,12 +151,12 @@
             margin-bottom: 0.2em;
           }
           &__title {
-            color: #383838;
+            color: var(--font-color);
 
             font-size: 1.7em;
           }
           &__desc {
-            color: #383838;
+            color: var(--font-color);
           }
           &__link {
             color: #4885ed;
@@ -199,5 +202,91 @@
 }
 
 #footer {
-  background-color: #383838;
+  background-color: var(--font-color);
+  .each-row {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 3em;
+    margin-bottom: 3em;
+    .each-content {
+      margin-bottom: 2em;
+
+      .title {
+        color: #fff;
+        font-size: 2em;
+        font-weight: bold;
+      }
+      .sub-title {
+        color: #fff;
+        font-size: 1.2em;
+        font-weight: normal;
+      }
+      .icon {
+        font-size: 1.6em;
+        margin-right: 1em;
+        color: #fff;
+      }
+      .info-container {
+        .list {
+          margin-top: 1em;
+          .item {
+            margin-bottom: 0.3em;
+            .info {
+              color: #fff;
+              font-size: 1.2em;
+            }
+          }
+        }
+      }
+      .company-info {
+        margin: 1em 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .link {
+          color: #fff;
+          align-self: flex-start;
+          width: 50%;
+          font-size: 1.2em;
+          img {
+            width: 90%;
+            height: auto;
+          }
+        }
+      }
+      .subscription {
+        display: flex;
+        margin: 1em 0;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4em;
+        .sub-email {
+          flex-basis: 80%;
+          padding: 1em 1.4em;
+          border-radius: 5px;
+          border: none;
+          font-size: 1em;
+          &:focus,
+          &:active {
+            outline: none;
+            border: none;
+          }
+        }
+        .sub-icon {
+          background: #ff0055;
+          color: #fff;
+          font-size: 3.3em;
+          border-radius: 4px;
+          padding: 4px 6px;
+        }
+      }
+    }
+    .horizontal {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    .lang {
+      margin-bottom: 4em;
+    }
+  }
 }
