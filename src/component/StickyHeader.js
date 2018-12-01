@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
@@ -15,6 +15,7 @@ const Header = () => {
                 placeholder="Search by location, property name"
                 className="input"
               />
+              <FontAwesomeIcon className="search-icon" icon={faSearch} />
             </div>
           </div>
         </div>

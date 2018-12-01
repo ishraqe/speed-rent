@@ -91,18 +91,22 @@
         align-items: center;
         .list {
           flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          .menu-icon {
-            color: var(--font-color);
-            font-size: 1.3em;
-          }
           a {
-            margin-top: 0.2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
             color: var(--font-color);
-            line-height: 1.2;
+            .menu-icon {
+              font-size: 1.3em;
+            }
+            span {
+              margin-top: 0.2em;
+
+              line-height: 1.2;
+              display: block;
+            }
           }
         }
       }
@@ -279,6 +283,28 @@
           padding: 4px 6px;
         }
       }
+      .social-info {
+        display: flex;
+        align-items: center;
+        margin-top: 4em;
+        .link {
+          margin-right: 1.5em;
+          .social-icon {
+            color: #fff;
+            font-size: 2em;
+            transition: 0.3s;
+          }
+          .fb:hover {
+            color: #3b5998;
+          }
+          .linkedin:hover {
+            color: #0077b5;
+          }
+          .insta:hover {
+            color: #e4405f;
+          }
+        }
+      }
     }
     .horizontal {
       display: flex;
@@ -287,6 +313,27 @@
     }
     .lang {
       margin-bottom: 4em;
+    }
+  }
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4em 0;
+    .company {
+      color: #fff;
+      margin-bottom: 0.3em;
+      margin-bottom: 0.3em;
+      font-size: 1.2em;
+      .copyright-icon {
+      }
+    }
+    .info {
+      color: #fff;
+      font-size: 0.9em;
+      a {
+        cursor: pointer;
+      }
     }
   }
 }

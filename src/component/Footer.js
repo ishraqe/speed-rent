@@ -5,8 +5,14 @@ import {
   faMapMarkerAlt,
   faPhone,
   faEnvelope,
-  faRss
+  faRss,
+  faCopyright
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookF,
+  faInstagram,
+  faLinkedinIn
+} from "@fortawesome/free-brands-svg-icons";
 import AppStore from "../assets/img/AppStore.png";
 
 const Footer = props => {
@@ -126,7 +132,39 @@ const Footer = props => {
                   <img src={AppStore} alt="" />
                 </a>
               </div>
+              <div className="each-content">
+                <div className="social-info">
+                  <a className="link">
+                    <FontAwesomeIcon
+                      icon={faFacebookF}
+                      className="social-icon fb"
+                    />
+                  </a>
+                  <a className="link">
+                    <FontAwesomeIcon
+                      icon={faLinkedinIn}
+                      className="social-icon linkedin"
+                    />
+                  </a>
+                  <a className="link">
+                    <FontAwesomeIcon
+                      icon={faInstagram}
+                      className="social-icon insta"
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
+          </div>
+          <div className="copyright">
+            <span className="company">
+              <FontAwesomeIcon icon={faCopyright} className="copyright-icon" />
+              2018 Speedrent
+            </span>
+            <span className="info">
+              All images are the property of their respective owner |
+              <a> Privacy</a>
+            </span>
           </div>
         </div>
       </div>

@@ -16,24 +16,34 @@ const MenuBar = () => {
           <div className="menu-container">
             <ul className="menu-list">
               <li className="list">
-                <FontAwesomeIcon className="menu-icon" icon={faHouseDamage} />
-                <a>Post</a>
+                <a>
+                  <FontAwesomeIcon className="menu-icon" icon={faHouseDamage} />
+                  <span>Post</span>
+                </a>
               </li>
               <li className="list">
-                <FontAwesomeIcon className="menu-icon" icon={faHome} />
-                <a>Speedmanage</a>
+                <a>
+                  <FontAwesomeIcon className="menu-icon" icon={faHome} />
+                  <span>Speedmanage</span>
+                </a>
               </li>
               <li className="list">
-                <FontAwesomeIcon className="menu-icon" icon={faEllipsisH} />
-                <a>More</a>
+                <a>
+                  <FontAwesomeIcon className="menu-icon" icon={faEllipsisH} />
+                  <span>More</span>
+                </a>
               </li>
               <li className="list">
-                <FontAwesomeIcon className="menu-icon" icon={faCommentAlt} />
-                <a>Chat</a>
+                <a>
+                  <FontAwesomeIcon className="menu-icon" icon={faCommentAlt} />
+                  <span>Chat</span>
+                </a>
               </li>
               <li className="list">
-                <FontAwesomeIcon className="menu-icon" icon={faSearch} />
-                <a>Search</a>
+                <a>
+                  <FontAwesomeIcon className="menu-icon" icon={faSearch} />
+                  <span>Search</span>
+                </a>
               </li>
             </ul>
           </div>
