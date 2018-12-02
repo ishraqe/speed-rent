@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-
 export default class Home extends Component {
   render() {
     return (

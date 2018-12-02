@@ -1,19 +1,20 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAngleRight,
-  faMapMarkerAlt,
-  faPhone,
-  faEnvelope,
-  faRss,
-  faCopyright
-} from "@fortawesome/free-solid-svg-icons";
+import { faRss, faCopyright } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookF,
   faInstagram,
   faLinkedinIn
 } from "@fortawesome/free-brands-svg-icons";
 import AppStore from "../assets/img/AppStore.png";
+import PlayStore from "../assets/img/GooglePlay.png";
+
+import {
+  LanguageIcon,
+  MapIcon,
+  EnvelopeIcon,
+  TelephoneIcon
+} from "../component/svgIcon";
 
 const Footer = props => {
   return (
@@ -22,13 +23,13 @@ const Footer = props => {
         <div className="wrapper pad-top-4">
           <div className="each-row">
             <div className="each-content lang horizontal">
-              <FontAwesomeIcon icon={faAngleRight} className="icon" />
+              <LanguageIcon class="icon" />
               <div className="info-container">
                 <h1 className="title">English</h1>
               </div>
             </div>
             <div className="each-content horizontal">
-              <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" />
+              <MapIcon class="icon" />
               <div className="info-container">
                 <h1 className="title">Speedrent</h1>
                 <ul className="list">
@@ -48,13 +49,13 @@ const Footer = props => {
               </div>
             </div>
             <div className="each-content horizontal">
-              <FontAwesomeIcon icon={faPhone} className="icon" />
+              <TelephoneIcon class="icon" />
               <div className="info-container">
                 <h1 className="sub-title">+6018 7777 650</h1>
               </div>
             </div>
             <div className="each-content horizontal">
-              <FontAwesomeIcon icon={faEnvelope} className="icon" />
+              <EnvelopeIcon class="icon" />
               <div className="info-container">
                 <h1 className="sub-title"> hello@speedrent.com</h1>
               </div>
@@ -129,7 +130,7 @@ const Footer = props => {
                   <img src={AppStore} alt="" />
                 </a>
                 <a className="link">
-                  <img src={AppStore} alt="" />
+                  <img src={PlayStore} alt="" />
                 </a>
               </div>
               <div className="each-content">

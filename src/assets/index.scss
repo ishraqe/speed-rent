@@ -19,6 +19,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 999999;
   .wrapper {
     padding: 0.5em 1em 0.8em;
     .nav-container {
@@ -103,7 +104,9 @@
             transition: 0.3s;
             color: var(--font-color);
             .menu-icon {
-              font-size: 1.3em;
+              width: 1.5em;
+              height: 1.5em;
+              fill: #383838;
             }
             span {
               margin-top: 0.2em;
@@ -259,9 +262,9 @@
         font-weight: normal;
       }
       .icon {
-        font-size: 1.6em;
+        fill: #fff;
+        width: 2em;
         margin-right: 1em;
-        color: #fff;
       }
       .info-container {
         .list {

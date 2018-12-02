@@ -1,8 +1,6 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faSearch } from "@fortawesome/free-solid-svg-icons";
-
-const Header = () => {
+const Header = props => {
+  console.log(props);
   return (
     <header id="sticky-header">
       <div className="container">
@@ -26,6 +24,7 @@ const Header = () => {
                 type="text"
                 placeholder="Search by location, property name"
                 className="input"
+                onFocus={() => props.history.push("/search")}
               />
             </div>
           </div>

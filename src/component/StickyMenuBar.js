@@ -7,6 +7,13 @@ import {
   faCommentAlt,
   faSearch
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  FooterMenuPost,
+  FooterChatIcon,
+  FooterMoreIcon,
+  FooterSearchIcon,
+  FooterSpeedIcon
+} from "./svgIcon";
 
 const MenuBar = () => {
   return (
@@ -17,31 +24,31 @@ const MenuBar = () => {
             <ul className="menu-list">
               <li className="list">
                 <a>
-                  <FontAwesomeIcon className="menu-icon" icon={faHouseDamage} />
+                  <FooterMenuPost class="menu-icon" />
                   <span>Post</span>
                 </a>
               </li>
               <li className="list">
                 <a>
-                  <FontAwesomeIcon className="menu-icon" icon={faHome} />
+                  <FooterSpeedIcon class="menu-icon" />
                   <span>Speedmanage</span>
                 </a>
               </li>
               <li className="list">
                 <a>
-                  <FontAwesomeIcon className="menu-icon" icon={faEllipsisH} />
+                  <FooterMoreIcon class="menu-icon" />
                   <span>More</span>
                 </a>
               </li>
               <li className="list">
                 <a>
-                  <FontAwesomeIcon className="menu-icon" icon={faCommentAlt} />
+                  <FooterChatIcon class="menu-icon" />
                   <span>Chat</span>
                 </a>
               </li>
               <li className="list">
                 <a>
-                  <FontAwesomeIcon className="menu-icon" icon={faSearch} />
+                  <FooterSearchIcon class="menu-icon" />
                   <span>Search</span>
                 </a>
               </li>

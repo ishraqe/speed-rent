@@ -1,18 +1,23 @@
 import React, { Component } from "react";
-import { Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import HOC from "../HOC/aux";
 import Home from "../container/Home";
+import Search from "../container/Search";
+
 import Error from "../container/404";
 
 class Router extends Component {
   render() {
     return (
-      <HOC>
-        <Switch>
-          <Route exact path="/" component={Home} />
-        </Switch>
-      </HOC>
+      <BrowserRouter>
+        <HOC>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/search" component={Search} />
+          </Switch>
+        </HOC>
+      </BrowserRouter>
     );
   }
 }

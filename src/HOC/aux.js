@@ -2,11 +2,12 @@ import React from "react";
 import Header from "../component/StickyHeader";
 import MenuBar from "../component/StickyMenuBar";
 import Footer from "../component/Footer";
+import { withRouter } from "react-router-dom";
 
 const AUX = props => {
   return (
     <div className="main-component">
-      <Header />
+      <Header {...props} />
       {props.children}
       <Footer />
       <MenuBar />
@@ -14,4 +15,4 @@ const AUX = props => {
   );
 };
 
-export default AUX;
+export default withRouter(AUX);
