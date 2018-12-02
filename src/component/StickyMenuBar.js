@@ -1,12 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHome,
-  faHouseDamage,
-  faEllipsisH,
-  faCommentAlt,
-  faSearch
-} from "@fortawesome/free-solid-svg-icons";
 import {
   FooterMenuPost,
   FooterChatIcon,
@@ -23,32 +15,32 @@ const MenuBar = () => {
           <div className="menu-container">
             <ul className="menu-list">
               <li className="list">
-                <a>
-                  <FooterMenuPost class="menu-icon" />
+                <a href="#">
+                  <FooterMenuPost className="menu-icon" />
                   <span>Post</span>
                 </a>
               </li>
               <li className="list">
-                <a>
-                  <FooterSpeedIcon class="menu-icon" />
+                <a href="#">
+                  <FooterSpeedIcon className="menu-icon" />
                   <span>Speedmanage</span>
                 </a>
               </li>
               <li className="list">
-                <a>
-                  <FooterMoreIcon class="menu-icon" />
+                <a href="#">
+                  <FooterMoreIcon className="menu-icon" />
                   <span>More</span>
                 </a>
               </li>
               <li className="list">
-                <a>
-                  <FooterChatIcon class="menu-icon" />
+                <a href="#">
+                  <FooterChatIcon className="menu-icon" />
                   <span>Chat</span>
                 </a>
               </li>
               <li className="list">
-                <a>
-                  <FooterSearchIcon class="menu-icon" />
+                <a href="#">
+                  <FooterSearchIcon className="menu-icon" />
                   <span>Search</span>
                 </a>
               </li>

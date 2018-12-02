@@ -23,13 +23,13 @@ const Footer = props => {
         <div className="wrapper pad-top-4">
           <div className="each-row">
             <div className="each-content lang horizontal">
-              <LanguageIcon class="icon" />
+              <LanguageIcon className="icon" />
               <div className="info-container">
                 <h1 className="title">English</h1>
               </div>
             </div>
             <div className="each-content horizontal">
-              <MapIcon class="icon" />
+              <MapIcon className="icon" />
               <div className="info-container">
                 <h1 className="title">Speedrent</h1>
                 <ul className="list">
@@ -49,13 +49,13 @@ const Footer = props => {
               </div>
             </div>
             <div className="each-content horizontal">
-              <TelephoneIcon class="icon" />
+              <TelephoneIcon className="icon" />
               <div className="info-container">
                 <h1 className="sub-title">+6018 7777 650</h1>
               </div>
             </div>
             <div className="each-content horizontal">
-              <EnvelopeIcon class="icon" />
+              <EnvelopeIcon className="icon" />
               <div className="info-container">
                 <h1 className="sub-title"> hello@speedrent.com</h1>
               </div>
@@ -65,7 +65,7 @@ const Footer = props => {
             <div className="each-content">
               <h1 className="title">Company</h1>
               <div className="company-info">
-                <a href="#" className="link">
+                <a href="/" className="link">
                   About Us
                 </a>
                 <a href="#" className="link">
@@ -94,16 +94,28 @@ const Footer = props => {
             <div className="each-content">
               <h1 className="title">Hot Areas</h1>
               <div className="company-info">
-                <a className="link">Cyberjaya</a>
-                <a className="link">Ampang</a>
+                <a href="#" className="link">
+                  Cyberjaya
+                </a>
+                <a href="#" className="link">
+                  Ampang
+                </a>
               </div>
               <div className="company-info">
-                <a className="link">Petaling Jaya</a>
-                <a className="link">Puchong</a>
+                <a href="#" className="link">
+                  Petaling Jaya
+                </a>
+                <a href="#" className="link">
+                  Puchong
+                </a>
               </div>
               <div className="company-info">
-                <a className="link">Shah Alam</a>
-                <a className="link">Subang Jaya</a>
+                <a href="#" className="link">
+                  Shah Alam
+                </a>
+                <a href="#" className="link">
+                  Subang Jaya
+                </a>
               </div>
             </div>
           </div>
@@ -126,28 +138,28 @@ const Footer = props => {
             <div className="each-content">
               <h1 className="title">Download the App here!</h1>
               <div className="company-info">
-                <a className="link">
+                <a href="#" className="link">
                   <img src={AppStore} alt="" />
                 </a>
-                <a className="link">
+                <a href="#" className="link">
                   <img src={PlayStore} alt="" />
                 </a>
               </div>
               <div className="each-content">
                 <div className="social-info">
-                  <a className="link">
+                  <a href="#" className="link">
                     <FontAwesomeIcon
                       icon={faFacebookF}
                       className="social-icon fb"
                     />
                   </a>
-                  <a className="link">
+                  <a href="#" className="link">
                     <FontAwesomeIcon
                       icon={faLinkedinIn}
                       className="social-icon linkedin"
                     />
                   </a>
-                  <a className="link">
+                  <a href="#" className="link">
                     <FontAwesomeIcon
                       icon={faInstagram}
                       className="social-icon insta"
@@ -164,7 +176,7 @@ const Footer = props => {
             </span>
             <span className="info">
               All images are the property of their respective owner |
-              <a> Privacy</a>
+              <a href="#"> Privacy</a>
             </span>
           </div>
         </div>

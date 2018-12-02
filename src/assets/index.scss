@@ -13,6 +13,9 @@
 .pad-top-4 {
   padding: 4em 1em;
 }
+.default-margin-top {
+  margin-top: 8em;
+}
 #sticky-header {
   background: var(--base-color);
   position: fixed;
@@ -60,11 +63,29 @@
       }
     }
   }
-  .login-button-container {
+  .path-button-container {
     width: 100%;
     text-align: right;
     padding: 0.5em 1em;
     background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .path-container {
+      a {
+        font-size: 1em;
+        border-right: 1px solid var(--font-color);
+        padding-right: 0.5em;
+        &:last-child {
+          color: #4885ed;
+          font-weight: bold;
+          border: none;
+        }
+        &:not(:first-child) {
+          padding-left: 0.5em;
+        }
+      }
+    }
     .login-button {
       font-weight: bold;
       font-style: normal;
@@ -121,7 +142,6 @@
   }
 }
 #home {
-  margin-top: 8em;
   #main-content {
     .border {
       background: var(--font-color);
