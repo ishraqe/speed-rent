@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 67">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #39d196;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_360" data-name="Group 360" transform="translate(-909 -1075)">
+    <circle id="Ellipse_326" data-name="Ellipse 326" class="cls-1" cx="33.5" cy="33.5" r="33.5" transform="translate(909 1075)"/>
+    <path id="Checkbox" class="cls-2" d="M17.807,32.336,1,15.528,4.988,11.54,17.807,24.074,40.882,1,44.87,4.988Z" transform="translate(920 1092)"/>
+  </g>
+</svg>

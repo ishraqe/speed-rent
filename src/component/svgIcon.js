@@ -369,3 +369,67 @@ export const DownArrowIcon = props => (
     />
   </svg>
 );
+
+export const CorrectIcon = props => (
+  <svg
+    className={props.className}
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 67 67"
+  >
+    <g id="Group_360" data-name="Group 360" transform="translate(-909 -1075)">
+      <circle
+        id="Ellipse_326"
+        data-name="Ellipse 326"
+        style={{
+          fill: "#39d196"
+        }}
+        cx="33.5"
+        cy="33.5"
+        r="33.5"
+        transform="translate(909 1075)"
+      />
+      <path
+        id="Checkbox"
+        style={{
+          fill: "#fff"
+        }}
+        d="M17.807,32.336,1,15.528,4.988,11.54,17.807,24.074,40.882,1,44.87,4.988Z"
+        transform="translate(920 1092)"
+      />
+    </g>
+  </svg>
+);
+
+export const InCorrectIcon = props => (
+  <svg
+    className={props.className}
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 67 67"
+  >
+    <g id="Group_361" data-name="Group 361" transform="translate(-909 -1453)">
+      <circle
+        id="Ellipse_328"
+        data-name="Ellipse 328"
+        style={{
+          fill: "#fe4242"
+        }}
+        cx="33.5"
+        cy="33.5"
+        r="33.5"
+        transform="translate(909 1453)"
+      />
+      <text
+        id="_"
+        data-name="!"
+        style={{
+          fill: "#fff"
+        }}
+        transform="translate(943 1506)"
+      >
+        <tspan x="-8.325" y="0">
+          !
+        </tspan>
+      </text>
+    </g>
+  </svg>
+);
