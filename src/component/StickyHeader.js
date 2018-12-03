@@ -41,10 +41,10 @@ const Header = props => {
           </div>
         </div>
       </div>
-      <section className="path-button-container">
+      <div className="path-button-container">
         <div className="path-container">{path(props)}</div>
         <button className="login-button">Login</button>
-      </section>
+      </div>
     </header>
   );
 };

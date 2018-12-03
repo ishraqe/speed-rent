@@ -6,23 +6,7 @@ export const FooterMenuPost = props => (
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 84.97 88.571"
   >
-    <defs>
-      {/* <style>
-      .cls-1, .cls-3 {
-        fill: #383838;
-      }
-
-      .cls-2 {
-        fill: #e2e2e2;
-      }
-
-      .cls-3 {
-        font-size: 57px;
-        font-family: Helvetica-Bold, Helvetica;
-        font-weight: 700;
-      }
-    </style> */}
-    </defs>
+    <defs />
     <g id="Group_22" data-name="Group 22" transform="translate(0.017 -0.025)">
       <path
         id="Path_117"
@@ -294,7 +278,7 @@ export const LeftArrowIcon = props => (
     <path
       id="Path_246"
       data-name="Path 246"
-      class="cls-1"
+      className="cls-1"
       d="M26.276,0,21.5,4.777,39.585,22.864H0v6.825H39.585L21.5,47.775l4.777,4.777L52.552,26.276Z"
       transform="translate(52.552 52.552) rotate(-180)"
     />
@@ -320,7 +304,7 @@ export const HelpIcon = props => (
       <path
         id="Path_146"
         data-name="Path 146"
-        class="cls-2"
+        className="cls-2"
         d="M22.5,0A22.5,22.5,0,1,0,45,22.5,22.566,22.566,0,0,0,22.5,0Zm-.225,37.35a3.15,3.15,0,1,1,3.15-3.15A3.076,3.076,0,0,1,22.275,37.35ZM28.35,19.8l-2.475,2.7a2.748,2.748,0,0,0-.9,2.025,2.736,2.736,0,0,1-2.7,2.7,2.6,2.6,0,0,1-2.7-2.7,5.021,5.021,0,0,1,1.8-4.05L23.4,18c1.125-1.35,1.575-2.25,1.575-3.15A2.361,2.361,0,0,0,22.5,12.375,2.647,2.647,0,0,0,19.8,14.4a2.938,2.938,0,0,1-2.7,1.575A2.361,2.361,0,0,1,14.625,13.5a2.446,2.446,0,0,1,.225-1.125c.9-2.7,3.6-4.725,7.65-4.725,4.725,0,7.875,3.15,7.875,7.2A7.382,7.382,0,0,1,28.35,19.8Z"
         transform="translate(247 538)"
       />
@@ -340,6 +324,48 @@ export const HelpIconOutline = props => (
       data-name="Path 261"
       style={props.style}
       d="M32.989,0A32.989,32.989,0,1,0,61.948,48.813a32.607,32.607,0,0,0,4.029-15.824A32.97,32.97,0,0,0,32.989,0Zm0,60.823A27.834,27.834,0,1,1,60.823,32.989,27.817,27.817,0,0,1,32.989,60.823ZM43.3,26.868a10.328,10.328,0,0,1-7.732,9.987v4.188a2.577,2.577,0,0,1-5.154,0V34.6a2.585,2.585,0,0,1,2.577-2.577,5.154,5.154,0,1,0-5.154-5.154,2.577,2.577,0,0,1-5.154,0,10.309,10.309,0,0,1,20.618,0ZM36.21,48.774a3.222,3.222,0,1,1-3.222-3.222A3.223,3.223,0,0,1,36.21,48.774Z"
+    />
+  </svg>
+);
+
+export const UpArrowIcon = props => (
+  <svg
+    className={props.className}
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 35.638 23.303"
+  >
+    <defs />
+    <path
+      id="Path_153"
+      data-name="Path 153"
+      style={{
+        fill: "none",
+        stroke: "#707070",
+        "stroke-width": "3px"
+      }}
+      d="M2298.333,1470l-16.667,20L2265,1470"
+      transform="translate(2299.486 1492.343) rotate(180)"
+    />
+  </svg>
+);
+
+export const DownArrowIcon = props => (
+  <svg
+    className={props.className}
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 35.638 23.303"
+  >
+    <defs />
+    <path
+      id="Path_153"
+      data-name="Path 153"
+      style={{
+        fill: "none",
+        stroke: "#727272",
+        "stroke-width": "3px"
+      }}
+      d="M2298.333,1470l-16.667,20L2265,1470"
+      transform="translate(-2263.848 -1469.04)"
     />
   </svg>
 );

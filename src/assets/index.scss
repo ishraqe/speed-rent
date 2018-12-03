@@ -52,7 +52,7 @@
   .path-button-container {
     width: 100%;
     text-align: right;
-    padding: 0.5em 1em;
+    padding: 0.5em 2em;
     background: #fff;
     display: flex;
     justify-content: space-between;
@@ -97,7 +97,6 @@
   width: 100%;
   background-color: #e2e2e2;
   .wrapper {
-    padding: 1em;
     .menu-container {
       .menu-list {
         display: flex;
@@ -124,6 +123,26 @@
               display: block;
             }
           }
+        }
+      }
+    }
+  }
+  .know-more {
+    background: var(--font-color);
+    padding: 0.2em 0;
+    .info {
+      text-align: right;
+      a {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .label-icon {
+          fill: #fff;
+          width: 1em;
+          margin-right: 0.5em;
+        }
+        span {
+          color: #fff;
         }
       }
     }
@@ -482,24 +501,78 @@
       }
     }
   }
-  .know-more {
-    background: var(--font-color);
-    padding: 0.2em 0;
-    margin-top: 2.3em;
-    .info {
-      text-align: right;
-      a {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        .label-icon {
-          fill: #fff;
-          width: 1em;
-          margin-right: 0.5em;
+}
+
+#ListingContainer {
+  .main-content {
+    margin-top: 1.5em;
+    .FormContent {
+      #progressbar {
+        margin-bottom: 30px;
+        overflow: hidden;
+        /*CSS counters to number the steps*/
+        counter-reset: step;
+        li {
+          list-style-type: none;
+          color: var(#b4b4b4);
+          font-size: 1em;
+          width: 33.33%;
+          float: left;
+          position: relative;
+          text-align: center;
+          &::before {
+            content: counter(step);
+            counter-increment: step;
+            width: 20px;
+            line-height: 20px;
+            display: block;
+            font-size: 10px;
+            color: transparent;
+            background: #b4b4b4;
+            border-radius: 50%;
+            margin: 0 auto 5px auto;
+          }
+          &::after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background: #b4b4b4;
+            position: absolute;
+            left: -40%;
+            top: 9px;
+            z-index: 99; /*put it behind the numbers*/
+          }
+          &:first-child:after {
+            /*connector not needed before the first step*/
+            content: none;
+          }
         }
-        span {
-          color: #fff;
+        .active {
+          color: var(--button-color);
         }
+      }
+      #progressbar li.active:before,
+      #progressbar li.active:after {
+        background: var(--button-color);
+      }
+      form {
+        .input-group {
+          margin-bottom: 1.2em;
+          .input {
+            padding: 0.5em 1em;
+            color: #727272;
+            border: 1px solid #727272;
+            width: 100%;
+            background-color: #ffffff;
+            outline: none;
+            border-radius: 4px;
+            font-size: 1.1em;
+            font-family: "Product Sans";
+          }
+        }
+      }
+      .buttonContainer {
+        text-align: center;
       }
     }
   }

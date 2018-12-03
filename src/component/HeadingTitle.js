@@ -3,7 +3,6 @@ import { LeftArrowIcon } from "./svgIcon";
 import { makeFirstLetterCap } from "../Utils";
 import { withRouter } from "react-router-dom";
 const HeadingTitle = props => {
-  console.log(props);
   return (
     <div id="headingTitle">
       <div className="container">

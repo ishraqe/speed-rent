@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../component/Footer";
 import Header from "../component/StickyHeader";
+import { Link } from "react-router-dom";
 
 export default class Home extends Component {
   render() {
@@ -190,13 +191,13 @@ export default class Home extends Component {
                         Rent out and <br /> get secured part.
                       </p>
                       <a className="each-info__link">Learn more</a>
-                      <button className="each-info__button">
+                      <Link to="/create-listing" className="each-info__button">
                         Create listing
                         <FontAwesomeIcon
                           className="each-info__button-icon"
                           icon={faArrowRight}
                         />
-                      </button>
+                      </Link>
                     </div>
                     <div className="each-info">
                       <h1 className="each-info__title">Tenant</h1>

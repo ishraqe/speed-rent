@@ -6,19 +6,39 @@ import {
   FooterSearchIcon,
   FooterSpeedIcon
 } from "./svgIcon";
+import { HelpIconOutline } from "./svgIcon";
+import { withRouter, Link } from "react-router-dom";
 
-const MenuBar = () => {
+const MenuBar = props => {
   return (
     <div id="menuBar">
+      {props.location.pathname != "/" ? (
+        <section className="know-more">
+          <div className="container">
+            <div className="wrapper">
+              <div className="info">
+                <Link to="/">
+                  <HelpIconOutline
+                    style={{ fill: "#fff" }}
+                    className="label-icon"
+                  />
+                  <span>Want to know more ?</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      ) : null}
+
       <div className="container">
         <div className="wrapper">
           <div className="menu-container">
             <ul className="menu-list">
               <li className="list">
-                <a href="#">
+                <Link to="/create-listing">
                   <FooterMenuPost className="menu-icon" />
                   <span>Post</span>
-                </a>
+                </Link>
               </li>
               <li className="list">
                 <a href="#">
@@ -52,4 +72,4 @@ const MenuBar = () => {
   );
 };
 
-export default MenuBar;
+export default withRouter(MenuBar);

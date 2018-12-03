@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Header from "../../component/StickyHeader";
 import HeadingTitle from "../../component/HeadingTitle";
 import Button from "../../component/Button";
-import { HelpIcon, HelpIconOutline } from "../../component/svgIcon";
+import { HelpIcon } from "../../component/svgIcon";
 
 export default class SearchContainer extends Component {
   render() {
@@ -67,21 +67,6 @@ export default class SearchContainer extends Component {
                       <Button title="Search" />
                     </div>
                   </form>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section className="know-more">
-            <div className="container">
-              <div className="wrapper">
-                <div className="info">
-                  <a>
-                    <HelpIconOutline
-                      style={{ fill: "#fff" }}
-                      className="label-icon"
-                    />
-                    <span>Want to know more ?</span>
-                  </a>
                 </div>
               </div>
             </div>
