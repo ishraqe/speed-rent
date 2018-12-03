@@ -1,13 +1,15 @@
 import React from "react";
 import { LeftArrowIcon } from "./svgIcon";
 import { makeFirstLetterCap } from "../Utils";
+import { withRouter } from "react-router-dom";
 const HeadingTitle = props => {
+  console.log(props);
   return (
     <div id="headingTitle">
       <div className="container">
         <div className="wrapper">
           <div className="headingContent">
-            <a>
+            <a onClick={() => props.history.goBack()}>
               <LeftArrowIcon className="leftArrow" />
             </a>
             <h1 className="title">{makeFirstLetterCap(props.title)}</h1>
@@ -18,4 +20,4 @@ const HeadingTitle = props => {
   );
 };
 
-export default HeadingTitle;
+export default withRouter(HeadingTitle);
