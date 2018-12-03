@@ -54,7 +54,9 @@ export default class SearchContainer extends Component {
                         />
                       </div>
                     </div>
-                    <Button title="Search" />
+                    <div className="button-contaner">
+                      <Button title="Search" />
+                    </div>
                   </form>
                 </div>
               </div>
