@@ -38,7 +38,7 @@ export default class SearchContainer extends Component {
                     </div>
                     <div className="input-group">
                       <label htmlFor="" className="label">
-                        Price
+                        Price (RM)
                       </label>
                       <div className="range-input-container">
                         <input
@@ -58,6 +58,15 @@ export default class SearchContainer extends Component {
                       <Button title="Search" />
                     </div>
                   </form>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className="know-more">
+            <div className="container">
+              <div className="wrapper">
+                <div className="info">
+                  <a>Want to know more ?</a>
                 </div>
               </div>
             </div>

@@ -11,7 +11,11 @@ html {
   background-color: #ffffff;
   font-family: sans-serif, serif;
   color: #383838;
+  font-weight: normal;
   // font-family: 'Archivo Narrow', sans-serif;
+}
+#root {
+  height: 100%;
 }
 ul {
   margin: 0;
@@ -30,10 +34,11 @@ a {
 }
 .default-button {
   font-size: 1.2em;
+  background: #ff0055;
   background: var(--button-color);
-  padding: 1em 3.5em;
+  padding: 0.4em 2em;
   border: none;
-  border-radius: 10px;
+  border-radius: 4px;
   color: #fff;
   text-align: center;
 }
@@ -42,7 +47,7 @@ a {
   position: relative;
 }
 .wrapper {
-  padding: 0.5em 1em;
+  padding: 0.5em 2em;
 }
 .pad-top-2 {
   padding: 2em 1em;
@@ -51,5 +56,5 @@ a {
   padding: 4em 1em;
 }
 .default-margin-top {
-  margin-top: 8em;
+  padding-top: 8em;
 }

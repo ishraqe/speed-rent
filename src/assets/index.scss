@@ -403,6 +403,9 @@
     .title {
       flex-basis: 90%;
       text-align: center;
+      font-size: 1.8em;
+      font-weight: normal;
+      margin-left: -1em;
     }
   }
 }
@@ -410,50 +413,57 @@
 // Search Container
 #searchContainer {
   .main-content {
-    margin-top: 4em;
+    margin-top: 1.5em;
     .searchContent {
       form {
         .input-group {
-          margin-bottom: 3.2em;
+          margin-bottom: 2em;
           .label {
             font-size: 1.8em;
           }
           .form-input,
-          .form-select,
-          .range-input {
-            margin-top: 1.2em;
+          .form-select {
+            margin-top: 0.8em;
             width: 100%;
-            font-size: 1.2em;
+            font-size: 1em;
+            border-radius: 0;
           }
           .form-input {
-            font-size: 1.2em;
-            border-bottom: 1px solid var(--font-color);
             color: var(--font-color);
             border: none;
-            border-bottom: 1px solid var(--font-color);
+            border-bottom: 1px solid #ddd;
             padding-bottom: 2px;
+            &::placeholder {
+              color: #ddd;
+            }
           }
           .form-select {
-            border: none;
-            border: 1px solid var(--font-color);
+            border: 1px solid #ddd;
             background: transparent;
-            padding: 0.7em 0.9em;
+            padding: 0.4em 0.9em;
             outline: none;
+            color: #ddd;
+            border-radius: 4px;
           }
           .range-input-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-top: 1.2em;
             .range-input {
-              border: 1px solid var(--font-color);
-              font-size: 1.2em;
+              border: 1px solid #ddd;
+              font-size: 1em;
               background: transparent;
-              padding: 0.7em 0.9em;
+              padding: 0.4em 0.9em;
               outline: none;
-              flex: 1;
+              vertical-align: middle;
+              width: 33%;
+              color: #ddd;
+              border-radius: 4px;
             }
             .diff {
-              flex: 1;
+              font-size: 1em;
+              color: var(--font-color);
             }
           }
         }
@@ -462,6 +472,17 @@
           justify-content: center;
           align-items: center;
         }
+      }
+    }
+  }
+  .know-more {
+    background: var(--font-color);
+    padding: 0.2em 0;
+    margin-top: 2.3em;
+    .info {
+      text-align: right;
+      a {
+        color: #fff;
       }
     }
   }
