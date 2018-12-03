@@ -28,3 +28,28 @@ a {
     text-decoration: none;
   }
 }
+.default-button {
+  font-size: 1.2em;
+  background: var(--button-color);
+  padding: 1em 3.5em;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.main-component {
+  position: relative;
+}
+.wrapper {
+  padding: 0.5em 1em;
+}
+.pad-top-2 {
+  padding: 2em 1em;
+}
+.pad-top-4 {
+  padding: 4em 1em;
+}
+.default-margin-top {
+  margin-top: 8em;
+}

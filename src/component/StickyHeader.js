@@ -1,12 +1,14 @@
 import React from "react";
+import { makeFirstLetterCap } from "../Utils";
 
 const path = data => {
-  return (
-    <>
-      <a>Home</a>
-      <a>Search</a>
-    </>
-  );
+  if (data.info) {
+    const { info } = data;
+    return info.map((el, i) => {
+      return <a key={i}>{makeFirstLetterCap(el)}</a>;
+    });
+  }
+  return null;
 };
 
 const Header = props => {

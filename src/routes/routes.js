@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import HOC from "../HOC/aux";
 import Home from "../container/Home";
-import Search from "../container/Search";
+import Search from "../container/Search/Search";
 
 import Error from "../container/404";
 

@@ -8,6 +8,7 @@ export default class Home extends Component {
   render() {
     return (
       <>
+        <Header {...this.props} />
         <div id="home" className="default-margin-top">
           <section id="main-content">
             <div className="container">

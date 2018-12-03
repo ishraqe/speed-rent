@@ -1,21 +1,7 @@
 @import "./variable";
 @import "./common";
 
-.main-component {
-  position: relative;
-}
-.wrapper {
-  padding: 0.5em 1em;
-}
-.pad-top-2 {
-  padding: 2em 1em;
-}
-.pad-top-4 {
-  padding: 4em 1em;
-}
-.default-margin-top {
-  margin-top: 8em;
-}
+// header
 #sticky-header {
   background: var(--base-color);
   position: fixed;
@@ -102,6 +88,8 @@
     }
   }
 }
+
+// bottom menu bar
 #menuBar {
   position: fixed;
   bottom: 0;
@@ -141,6 +129,8 @@
     }
   }
 }
+
+// home page
 #home {
   #main-content {
     .border {
@@ -262,6 +252,7 @@
   }
 }
 
+// footer
 #footer {
   background-color: var(--font-color);
   .each-row {
@@ -390,6 +381,87 @@
       font-size: 0.9em;
       a {
         cursor: pointer;
+      }
+    }
+  }
+}
+
+// default title
+#headingTitle {
+  .headingContent {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--font-color);
+    padding-bottom: 1em;
+    a {
+      flex-basis: 10%;
+      .leftArrow {
+        width: 1.5em;
+        fill: var(--font-color);
+      }
+    }
+    .title {
+      flex-basis: 90%;
+      text-align: center;
+    }
+  }
+}
+
+// Search Container
+#searchContainer {
+  .main-content {
+    margin-top: 4em;
+    .searchContent {
+      form {
+        .input-group {
+          margin-bottom: 3.2em;
+          .label {
+            font-size: 1.8em;
+          }
+          .form-input,
+          .form-select,
+          .range-input {
+            margin-top: 1.2em;
+            width: 100%;
+            font-size: 1.2em;
+          }
+          .form-input {
+            font-size: 1.2em;
+            border-bottom: 1px solid var(--font-color);
+            color: var(--font-color);
+            border: none;
+            border-bottom: 1px solid var(--font-color);
+            padding-bottom: 2px;
+          }
+          .form-select {
+            border: none;
+            border: 1px solid var(--font-color);
+            background: transparent;
+            padding: 0.7em 0.9em;
+            outline: none;
+          }
+          .range-input-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .range-input {
+              border: 1px solid var(--font-color);
+              font-size: 1.2em;
+              background: transparent;
+              padding: 0.7em 0.9em;
+              outline: none;
+              flex: 1;
+            }
+            .diff {
+              flex: 1;
+            }
+          }
+        }
+        .button-contaner {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
       }
     }
   }
