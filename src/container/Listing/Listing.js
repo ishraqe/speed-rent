@@ -10,7 +10,7 @@ import UploadPhoto from "./Component/uploadPhoto";
 
 export default class Listing extends Component {
   state = {
-    stage: 1,
+    stage: 2,
     headingTitle: "create listing",
     createListing: {
       housingTypeExtend: false,
@@ -51,7 +51,6 @@ export default class Listing extends Component {
     });
   };
   handleHousingTypeCheckBox = value => {
-    console.log(value);
     this.setState({
       createListing: {
         housingType: value,
@@ -67,10 +66,11 @@ export default class Listing extends Component {
           showProperty={this.state.createListing.housingTypeExtend}
           housingTypeValue={this.state.createListing.housingType}
           housingTypeCheckBoxValue={this.handleHousingTypeCheckBox}
+          handleButton={this.handleStage}
         />
       );
     } else if (this.state.stage === 2) {
-      return <UploadPhoto />;
+      return <UploadPhoto handleButton={this.handleStage} />;
     } else if (this.state.stage === 3) {
       return <ExtraInfo />;
     }
@@ -94,10 +94,7 @@ export default class Listing extends Component {
               <div className="wrapper">
                 <div className="FormContent">
                   <div className="steps">{this.renderSteps()}</div>
-                  <form>{this.renderStage()}</form>
-                  <div className="buttonContainer">
-                    <Button title="Create" onClick={() => this.handleStage()} />
-                  </div>
+                  {this.renderStage()}
                 </div>
               </div>
             </div>

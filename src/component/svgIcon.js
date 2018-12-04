@@ -436,3 +436,62 @@ export const InCorrectIcon = props => (
     </g>
   </svg>
 );
+
+export const CameraIcon = props => (
+  <svg
+    className={props.className}
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 130 105.625"
+  >
+    <g id="Group_66" data-name="Group 66" transform="translate(0)">
+      <path
+        id="Path_193"
+        data-name="Path 193"
+        style={{
+          fill: "#fff"
+        }}
+        d="M38.594,60.938A26.406,26.406,0,1,0,65,34.531,26.406,26.406,0,0,0,38.594,60.938ZM121.875,16.25H93.438C91.406,8.125,89.375,0,81.25,0H48.75C40.625,0,38.594,8.125,36.563,16.25H8.125A8.141,8.141,0,0,0,0,24.375V97.5a8.141,8.141,0,0,0,8.125,8.125h113.75A8.141,8.141,0,0,0,130,97.5V24.375a8.141,8.141,0,0,0-8.125-8.125ZM65,96.992a36.055,36.055,0,1,1,36.055-36.055A36.071,36.071,0,0,1,65,96.992Zm56.875-56.367h-16.25V32.5h16.25Zm0,0"
+      />
+    </g>
+  </svg>
+);
+
+export const PlusIcon = props => (
+  <svg
+    className={props.className}
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 106 150"
+  >
+    <defs />
+    <g id="Group_487" data-name="Group 487" transform="translate(-729 -2008)">
+      <circle
+        id="Ellipse_311"
+        data-name="Ellipse 311"
+        style={{
+          fill: "#fff"
+        }}
+        cx="53"
+        cy="53"
+        r="53"
+        transform="translate(729 2030)"
+      />
+      <g id="Group_486" data-name="Group 486">
+        <text
+          id="_"
+          data-name="+"
+          style={{
+            fill: "#e2e2e2",
+            "font-size": "150px",
+            "font-family": "Helvetica-Bold, Helvetica",
+            "font-weight": 700
+          }}
+          transform="translate(782 2124)"
+        >
+          <tspan x="-43.799" y="0">
+            +
+          </tspan>
+        </text>
+      </g>
+    </g>
+  </svg>
+);

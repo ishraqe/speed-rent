@@ -555,7 +555,7 @@
       #progressbar li.active:after {
         background: var(--button-color);
       }
-      form {
+      .createListing {
         .input-group {
           margin-bottom: 1.2em;
 
@@ -660,6 +660,74 @@
               border-width: 0 3px 3px 0;
               -webkit-transform: rotate(45deg);
               transform: rotate(45deg);
+            }
+          }
+        }
+      }
+      .uploadPhotosContainer {
+        text-align: center;
+        .uploadInfo {
+          color: var(--font-color);
+          font-size: 1em;
+          font-family: "Product Sans";
+        }
+        .uploadPhotoInputContainer {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 1.5em;
+          .box {
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: calc(33% - 10px);
+            margin-right: 1em;
+            margin-bottom: 1em;
+            position: relative;
+            background-color: #e2e2e2;
+            height: 145px;
+            border-radius: 4px;
+            input {
+              height: 100%;
+              width: 100%;
+              border: none;
+              background: transparent;
+              outline: none;
+              border: solid transparent;
+              opacity: 0;
+              filter: alpha(opacity=0);
+              -o-transform: translate(250px, -50px) scale(1);
+              -moz-transform: translate(-300px, 0) scale(4);
+              direction: ltr;
+              cursor: pointer;
+              z-index: 2;
+              position: relative;
+            }
+            .camera-icon {
+              width: 3em;
+              position: absolute;
+              top: 40%;
+              left: 35%;
+            }
+            .more {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              bottom: 0;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              .more-icon {
+                width: 3em;
+              }
+              .more-text {
+                color: #727272;
+              }
+            }
+            &:after {
+              content: "";
+              display: block;
+              padding-bottom: 100%;
             }
           }
         }
