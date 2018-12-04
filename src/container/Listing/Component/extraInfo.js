@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../../component/Button";
-
+import { DownArrowIcon } from "../../../component/svgIcon";
 const ExtraInfo = props => {
   return (
     <div className="extraInfoContainer">
@@ -8,20 +8,32 @@ const ExtraInfo = props => {
       <form>
         <div className="extraInfoInputContainer">
           <div className="input-container">
-            <select className="select">
-              <option value="">Furnishing</option>
-            </select>
-            <select className="select">
-              <option value="">Bedroom</option>
-            </select>
+            <div className="each-select">
+              <select className="select">
+                <option value="">Furnishing</option>
+              </select>
+              <DownArrowIcon className="input-icon housingTypeIcon" />
+            </div>
+            <div className="each-select">
+              <select className="select">
+                <option value="">Bedroom</option>
+              </select>
+              <DownArrowIcon className="input-icon housingTypeIcon" />
+            </div>
           </div>
           <div className="input-container">
-            <select className="select">
-              <option value="">Bathroom</option>
-            </select>
-            <select className="select">
-              <option value="">Parking</option>
-            </select>
+            <div className="each-select">
+              <select className="select">
+                <option value="">Bathroom</option>
+              </select>
+              <DownArrowIcon className="input-icon housingTypeIcon" />
+            </div>
+            <div className="each-select">
+              <select className="select">
+                <option value="">Parking</option>
+              </select>
+              <DownArrowIcon className="input-icon housingTypeIcon" />
+            </div>
           </div>
           <div className="input-container">
             <label className="custom-selectbox">
@@ -81,17 +93,26 @@ const ExtraInfo = props => {
           </div>
           <h1 className="heading">Additional info</h1>
           <div className="input-container">
-            <select className="select">
-              <option value="">Furnishing</option>
-            </select>
-            <select className="select">
-              <option value="">Bedroom</option>
-            </select>
+            <div className="each-select">
+              <select className="select">
+                <option value="">Furnishing</option>
+              </select>
+              <DownArrowIcon className="input-icon housingTypeIcon" />
+            </div>
+
+            <label className="custom-selectbox">
+              Floor level
+              <input type="checkbox" value="Nearby LRT" />
+              <span className="checkmark" />
+            </label>
           </div>
           <h1 className="heading">Description</h1>
+          <div className="input-container">
+            <textarea name="" id="" cols="30" rows="10" placeholder="enter" />
+          </div>
         </div>
         <div className="buttonContainer">
-          <Button title="Upload" onClick={props.handleButton} />
+          <Button title="Post" onClick={props.handleButton} />
         </div>
       </form>
     </div>

@@ -176,7 +176,7 @@ const Footer = props => {
             </span>
             <span className="info">
               All images are the property of their respective owner |
-              <a href="#"> Privacy</a>
+              <a href="#"> Privacy Policy</a>
             </span>
           </div>
         </div>

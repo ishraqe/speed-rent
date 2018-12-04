@@ -10,7 +10,7 @@ import UploadPhoto from "./Component/uploadPhoto";
 
 export default class Listing extends Component {
   state = {
-    stage: 3,
+    stage: 1,
     headingTitle: "create listing",
     createListing: {
       housingTypeExtend: false,
