@@ -10,15 +10,33 @@ const Create = props => {
   return (
     <>
       <div className="input-group">
-        <input type="text" placeholder="Property Type" className="input" />
-        <DownArrowIcon className="input-icon" />
-        <div className="expendadInput">
-          <label class="container">
-            One
-            <input type="checkbox" />
-            <span class="checkmark" />
-          </label>
-        </div>
+        <input
+          type="text"
+          placeholder="Housing Type"
+          className="input "
+          // disabled={props.sho}
+          onFocus={() => props.housingType(true)}
+          // onBlur={() => props.propertyType(false)}
+        />
+        <DownArrowIcon className="input-icon housingTypeIcon" />
+        {props.showProperty && (
+          <div className="expendadInput">
+            <label className="container">
+              Landed
+              <input
+                type="checkbox"
+                onChange={e => console.log(e.target.value)}
+                value="handling"
+              />
+              <span className="checkmark" />
+            </label>
+            <label className="container">
+              High rise
+              <input type="checkbox" />
+              <span className="checkmark" />
+            </label>
+          </div>
+        )}
       </div>
       <div className="input-group">
         <CorrectIcon className="input-icon" />

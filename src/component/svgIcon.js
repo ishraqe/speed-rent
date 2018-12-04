@@ -422,7 +422,10 @@ export const InCorrectIcon = props => (
         id="_"
         data-name="!"
         style={{
-          fill: "#fff"
+          fill: "#fff",
+          "font-size": "50px",
+          "font-family": "Helvetica-Bold, Helvetica",
+          "font-weight": 700
         }}
         transform="translate(943 1506)"
       >

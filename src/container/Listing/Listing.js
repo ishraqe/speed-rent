@@ -10,19 +10,30 @@ import UploadPhoto from "./Component/uploadPhoto";
 
 export default class Listing extends Component {
   state = {
-    stage: 1
+    stage: 1,
+    stageOne: {
+      housingTypeExtend: false
+    }
+  };
+  extendedHousingType = status => {
+    this.setState({
+      stageOne: {
+        housingTypeExtend: status
+      }
+    });
   };
   renderStage() {
-    switch (this.state.stage) {
-      case this.state.stage === 1:
-        return <Create />;
-      case this.state.stage === 2:
-        return <UploadPhoto />;
-      case this.state.stage === 3:
-        return <ExtraInfo />;
-
-      default:
-        return <Create />;
+    if (this.state.stage === 1) {
+      return (
+        <Create
+          housingType={this.extendedHousingType}
+          showProperty={this.state.stageOne.housingTypeExtend}
+        />
+      );
+    } else if (this.state.stage === 2) {
+      return <UploadPhoto />;
+    } else if (this.state.stage === 3) {
+      return <ExtraInfo />;
     }
   }
   render() {
