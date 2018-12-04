@@ -66,6 +66,20 @@ input,
 textarea,
 select {
   outline: none;
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+  background: #fff;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+/* For IE10 */
+select::-ms-expand {
+  display: none;
 }
 .default-button {
   font-size: 1.2em;

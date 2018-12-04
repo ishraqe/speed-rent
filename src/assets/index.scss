@@ -573,17 +573,16 @@
             font-size: 1.2em;
             font-family: "Product Sans";
             padding: 0.5em 1em;
+            border: none;
           }
 
           .input-icon {
             position: absolute;
             width: 1.5em;
             right: 1em;
-            top: 1em;
+            top: 0.5em;
           }
-          .housingTypeIcon {
-            width: 1em !important;
-          }
+
           .expendadInput {
             background-color: #f3f3f3;
             width: 100%;
