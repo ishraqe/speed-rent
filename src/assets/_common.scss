@@ -65,6 +65,7 @@ button {
 input,
 textarea,
 select {
+  border-radius: 4px;
   outline: none;
   /* for Firefox */
   -moz-appearance: none;
