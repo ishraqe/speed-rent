@@ -59,6 +59,10 @@ a {
   border-radius: 4px;
   color: #fff;
   text-align: center;
+  &:active,
+  &:focus {
+    outline: none;
+  }
 }
 
 .main-component {

@@ -11,14 +11,51 @@ import UploadPhoto from "./Component/uploadPhoto";
 export default class Listing extends Component {
   state = {
     stage: 1,
-    stageOne: {
-      housingTypeExtend: false
+    headingTitle: "create listing",
+    createListing: {
+      housingTypeExtend: false,
+      housingType: "Housing Type"
     }
+  };
+  handleStage = () => {
+    this.setState({
+      stage: this.state.stage + 1
+    });
+  };
+  renderSteps = () => {
+    return (
+      <ul id="progressbar">
+        <li
+          className={
+            this.state.stage === 1 || this.state.stage <= 3 ? "active" : null
+          }
+        >
+          Create Listing
+        </li>
+        <li
+          className={
+            this.state.stage <= 3 && this.state.stage > 1 ? "active" : null
+          }
+        >
+          Upload Photo
+        </li>
+        <li className={this.state.stage == 3 ? "active" : null}>Extra Info</li>
+      </ul>
+    );
   };
   extendedHousingType = status => {
     this.setState({
-      stageOne: {
+      createListing: {
         housingTypeExtend: status
+      }
+    });
+  };
+  handleHousingTypeCheckBox = value => {
+    console.log(value);
+    this.setState({
+      createListing: {
+        housingType: value,
+        housingTypeExtend: true
       }
     });
   };
@@ -27,7 +64,9 @@ export default class Listing extends Component {
       return (
         <Create
           housingType={this.extendedHousingType}
-          showProperty={this.state.stageOne.housingTypeExtend}
+          showProperty={this.state.createListing.housingTypeExtend}
+          housingTypeValue={this.state.createListing.housingType}
+          housingTypeCheckBoxValue={this.handleHousingTypeCheckBox}
         />
       );
     } else if (this.state.stage === 2) {
@@ -41,21 +80,23 @@ export default class Listing extends Component {
       <>
         <Header {...this.props} info={["home", "create listing"]} />
         <div id="ListingContainer" className="default-margin-top">
-          <HeadingTitle title="create listing" />
+          <HeadingTitle
+            title={
+              this.state.stage === 1
+                ? "create listing"
+                : this.state.stage === 2
+                ? "upload photo"
+                : "Extra Info"
+            }
+          />
           <section className="main-content">
             <div className="container">
               <div className="wrapper">
                 <div className="FormContent">
-                  <div className="steps">
-                    <ul id="progressbar">
-                      <li class="active">Create Listing</li>
-                      <li class="active">Upload Photo</li>
-                      <li>Extra Info</li>
-                    </ul>
-                  </div>
+                  <div className="steps">{this.renderSteps()}</div>
                   <form>{this.renderStage()}</form>
                   <div className="buttonContainer">
-                    <Button title="Create" />
+                    <Button title="Create" onClick={() => this.handleStage()} />
                   </div>
                 </div>
               </div>

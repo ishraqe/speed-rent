@@ -13,26 +13,34 @@ const Create = props => {
         <input
           type="text"
           placeholder="Housing Type"
-          className="input "
-          // disabled={props.sho}
+          className="input"
+          // disabled={props.showProperty}
           onFocus={() => props.housingType(true)}
-          // onBlur={() => props.propertyType(false)}
+          value={props.housingTypeValue}
         />
-        <DownArrowIcon className="input-icon housingTypeIcon" />
+        <a onClick={() => props.housingType(false)}>
+          <DownArrowIcon className="input-icon housingTypeIcon" />
+        </a>
         {props.showProperty && (
           <div className="expendadInput">
             <label className="container">
               Landed
               <input
                 type="checkbox"
-                onChange={e => console.log(e.target.value)}
-                value="handling"
+                onChange={e => props.housingTypeCheckBoxValue(e.target.value)}
+                value="Landed"
+                checked={props.housingTypeValue == "Landed"}
               />
               <span className="checkmark" />
             </label>
             <label className="container">
               High rise
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                onChange={e => props.housingTypeCheckBoxValue(e.target.value)}
+                value="High Rise"
+                checked={props.housingTypeValue == "High Rise"}
+              />
               <span className="checkmark" />
             </label>
           </div>

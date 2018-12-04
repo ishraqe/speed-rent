@@ -590,7 +590,7 @@
             .container {
               display: block;
               position: relative;
-              padding: 0px 1.5em;
+              padding: 0.5em 1.5em;
               cursor: pointer;
               -webkit-user-select: none;
               -moz-user-select: none;
@@ -600,7 +600,10 @@
               font-family: "Product Sans";
               color: #727272;
               margin-bottom: 0.5em;
-              padding-top: 0.4em;
+              border-bottom: 1px solid #727272;
+              &:last-child {
+                border-bottom: none;
+              }
             }
 
             /* Hide the browser's default checkbox */
