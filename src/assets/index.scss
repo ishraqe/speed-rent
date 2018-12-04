@@ -96,6 +96,7 @@
   left: 0;
   width: 100%;
   background-color: #e2e2e2;
+  z-index: 999999;
   .wrapper {
     .menu-container {
       .menu-list {
@@ -298,7 +299,7 @@
       }
       .info-container {
         .list {
-          margin-top: 1em;
+          margin-top: 2em;
           .item {
             margin-bottom: 0.3em;
             .info {
@@ -309,7 +310,7 @@
         }
       }
       .company-info {
-        margin: 1em 0;
+        margin: 2em 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -379,7 +380,7 @@
       align-items: flex-start;
     }
     .lang {
-      margin-bottom: 4em;
+      margin-bottom: 6em;
     }
   }
   .copyright {
@@ -391,14 +392,15 @@
       color: #fff;
       margin-bottom: 0.3em;
       margin-bottom: 0.3em;
-      font-size: 1.2em;
+      font-size: 0.8em;
       .copyright-icon {
       }
     }
     .info {
       color: #fff;
-      font-size: 0.9em;
+      font-size: 0.8em;
       a {
+        color: #fff;
         cursor: pointer;
       }
     }
@@ -685,6 +687,22 @@
             background-color: #e2e2e2;
             height: 145px;
             border-radius: 4px;
+            .prevImageContainer {
+              height: 100%;
+              width: 100%;
+              position: relative;
+              .previewImage {
+                height: 100%;
+                width: 100%;
+              }
+              .remove-icon {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                fill: #fff;
+                font-size: 2em;
+              }
+            }
             input {
               height: 100%;
               width: 100%;

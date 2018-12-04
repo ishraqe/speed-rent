@@ -46,9 +46,26 @@ ul li {
 a {
   cursor: pointer;
   text-decoration: none;
-  &:hover {
+  outline: none;
+  &:hover,
+  &:focus {
     text-decoration: none;
+    outline: none;
   }
+}
+button {
+  text-decoration: none;
+  outline: none;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+}
+input,
+textarea,
+select {
+  outline: none;
 }
 .default-button {
   font-size: 1.2em;

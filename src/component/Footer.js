@@ -57,7 +57,7 @@ const Footer = props => {
             <div className="each-content horizontal">
               <EnvelopeIcon className="icon" />
               <div className="info-container">
-                <h1 className="sub-title"> hello@speedrent.com</h1>
+                <h1 className="sub-title">hello@speedrent.com</h1>
               </div>
             </div>
           </div>

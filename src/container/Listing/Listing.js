@@ -15,7 +15,8 @@ export default class Listing extends Component {
     createListing: {
       housingTypeExtend: false,
       housingType: "Housing Type"
-    }
+    },
+    uploadPhotos: []
   };
   handleStage = () => {
     this.setState({
@@ -58,6 +59,20 @@ export default class Listing extends Component {
       }
     });
   };
+  fileUpload = filePath => {
+    var reader = new FileReader();
+    var url = reader.readAsDataURL(filePath);
+    reader.onloadend = function(e) {
+      this.setState({
+        uploadPhotos: [reader.result]
+      });
+    }.bind(this);
+  };
+  removeImageHandler = () => {
+    this.setState({
+      uploadPhotos: []
+    });
+  };
   renderStage() {
     if (this.state.stage === 1) {
       return (
@@ -70,7 +85,14 @@ export default class Listing extends Component {
         />
       );
     } else if (this.state.stage === 2) {
-      return <UploadPhoto handleButton={this.handleStage} />;
+      return (
+        <UploadPhoto
+          handleButton={this.handleStage}
+          fileChangedHandler={this.fileUpload}
+          imageUrls={this.state.uploadPhotos}
+          removeImage={this.removeImageHandler}
+        />
+      );
     } else if (this.state.stage === 3) {
       return <ExtraInfo />;
     }

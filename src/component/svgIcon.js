@@ -11,14 +11,18 @@ export const FooterMenuPost = props => (
       <path
         id="Path_117"
         data-name="Path 117"
-        className="cls-1"
+        style={{
+          fill: "#383838"
+        }}
         d="M73.727,31.919a6.448,6.448,0,0,0-2.24-4.429L65.1,22.032V6.481a2.176,2.176,0,0,0-2.163-2.163H54.288a2.154,2.154,0,0,0-2.137,2.163V10.91L41.234,1.589a6.447,6.447,0,0,0-8.419,0L2.253,27.491a6.482,6.482,0,0,0,6.411,11.02V71.6A2.137,2.137,0,0,0,10.8,73.758H62.939A2.176,2.176,0,0,0,65.1,71.6V38.536a6.476,6.476,0,0,0,8.625-6.617ZM56.451,8.644H60.8v9.681l-4.351-3.708ZM45.688,69.433H28.077V52.105H45.688Zm4.3,0V49.994a2.176,2.176,0,0,0-2.163-2.163H25.94A2.154,2.154,0,0,0,23.8,49.994V69.433H12.964V35.421L37.012,15.029,60.828,35.421V69.459H49.988ZM68.912,33.825a2.135,2.135,0,0,1-3.038.232L38.428,10.523a2.149,2.149,0,0,0-2.806,0c-.592.489-27.627,23.43-27.73,23.533a2.155,2.155,0,1,1-2.806-3.27L35.6,4.885a2.149,2.149,0,0,1,2.806,0l30.253,25.9A2.138,2.138,0,0,1,68.912,33.825Z"
         transform="translate(0 0)"
       />
       <path
         id="Path_118"
         data-name="Path 118"
-        className="cls-1"
+        style={{
+          fill: "#383838"
+        }}
         d="M124.6,100.6h-13.26a2.154,2.154,0,0,0-2.137,2.163v12.977a2.137,2.137,0,0,0,2.137,2.163H124.6a2.176,2.176,0,0,0,2.163-2.163V102.763A2.176,2.176,0,0,0,124.6,100.6Zm-2.137,12.977H113.5v-8.651h8.96Z"
         transform="translate(-81.097 -74.68)"
       />
@@ -33,7 +37,9 @@ export const FooterMenuPost = props => (
       <circle
         id="Ellipse_101"
         data-name="Ellipse 101"
-        className="cls-2"
+        style={{
+          fill: "#e2e2e2"
+        }}
         cx="21.859"
         cy="21.859"
         r="21.859"
@@ -42,7 +48,12 @@ export const FooterMenuPost = props => (
       <text
         id="_"
         data-name="+"
-        className="cls-3"
+        style={{
+          fill: "#383838",
+          "font-size": "57px",
+          "font-family": "Helvetica-Bold, Helvetica",
+          "font-weight": 700
+        }}
         transform="translate(47.319 75.596)"
       >
         <tspan x="0" y="0">
@@ -253,7 +264,7 @@ export const TelephoneIcon = props => (
 
 export const EnvelopeIcon = props => (
   <svg
-    className={props.class}
+    className={props.className}
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 65.966 50.248"
   >
