@@ -5,7 +5,6 @@ import Button from "../../../component/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight, faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 const UploadPhoto = props => {
-  console.log(props.imageUrls.length);
   return (
     <div className="uploadPhotosContainer">
       <span className="uploadInfo">
