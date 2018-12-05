@@ -49,10 +49,10 @@ export const FooterMenuPost = props => (
         id="_"
         data-name="+"
         style={{
-          fill: "#383838"
-          // "font-size": "57px",
-          // "font-family": "Helvetica-Bold, Helvetica",
-          // "font-weight": 700
+          fill: "#383838",
+          "font-size": "57px",
+          "font-family": "Helvetica-Bold, Helvetica",
+          "font-weight": 700
         }}
         transform="translate(47.319 75.596)"
       >
