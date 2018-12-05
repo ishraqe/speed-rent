@@ -4,11 +4,14 @@ import { faAngleRight, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../component/Footer";
 import Header from "../component/StickyHeader";
 import { Link } from "react-router-dom";
-
+import { Helmet } from "react-helmet";
 export default class Home extends Component {
   render() {
     return (
       <>
+        <Helmet>
+          <title>Speedrent | Rent a housing</title>
+        </Helmet>
         <Header {...this.props} />
         <div id="home" className="default-margin-top">
           <section id="main-content">

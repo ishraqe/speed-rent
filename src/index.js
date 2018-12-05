@@ -8,13 +8,16 @@ import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import ReduxThunk from "redux-thunk";
 import reducers from "./store/reducer";
-
+import Favicon from "react-favicon";
 const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
 
 const app = (
   <Provider store={store}>
     <BrowserRouter>
-      <App />
+      <>
+        <Favicon url="./assets/img/logo.svg" />
+        <App />
+      </>
     </BrowserRouter>
   </Provider>
 );

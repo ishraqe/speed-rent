@@ -7,7 +7,7 @@ import Button from "../../component/Button";
 import Create from "./Component/create";
 import ExtraInfo from "./Component/extraInfo";
 import UploadPhoto from "./Component/uploadPhoto";
-
+import { Helmet } from "react-helmet";
 export default class Listing extends Component {
   state = {
     stage: 1,
@@ -100,6 +100,9 @@ export default class Listing extends Component {
   render() {
     return (
       <>
+        <Helmet>
+          <title>Speedrent | Create Listing</title>
+        </Helmet>
         <Header {...this.props} info={["home", "create listing"]} />
         <div id="ListingContainer" className="default-margin-top">
           <HeadingTitle

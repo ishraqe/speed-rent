@@ -3,11 +3,14 @@ import Header from "../../component/StickyHeader";
 import HeadingTitle from "../../component/HeadingTitle";
 import Button from "../../component/Button";
 import { HelpIcon } from "../../component/svgIcon";
-
+import { Helmet } from "react-helmet";
 export default class SearchContainer extends Component {
   render() {
     return (
       <>
+        <Helmet>
+          <title>Speedrent | Search Property</title>
+        </Helmet>
         <Header {...this.props} info={["home", "search house"]} />
         <div id="searchContainer" className="default-margin-top">
           <HeadingTitle title="search house" />
