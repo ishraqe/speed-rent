@@ -114,6 +114,9 @@ const ExtraInfo = props => {
         <div className="buttonContainer">
           <Button title="Post" onClick={props.handleButton} />
         </div>
+        <div className="buttonContainer">
+          <Button title="Post now!" onClick={props.handleButton} />
+        </div>
       </form>
     </div>
   );
