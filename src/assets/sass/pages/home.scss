@@ -8,6 +8,10 @@
 .section-bilboard {
   padding: 6rem 0;
   .bilboard {
+    border-bottom: 1px solid $default-font-color;
+    padding-bottom: 14rem;
+    @include clearfix;
+
     &__info,
     &__image-container {
       height: 80rem;
