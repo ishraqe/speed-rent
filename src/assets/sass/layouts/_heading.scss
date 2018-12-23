@@ -1,0 +1,139 @@
+.main-heading {
+  padding: 2rem 0;
+  background-color: $color-heading;
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav {
+      flex: 1;
+    }
+    &__logo {
+      width: auto;
+      height: 10rem;
+      color: $default-font-color;
+    }
+    &__nav-list-container {
+      display: flex;
+      align-items: center;
+    }
+    &__nav--list {
+      margin-left: 4rem;
+    }
+    &__nav--item {
+      display: inline-block;
+      &:not(:last-child) {
+        margin-right: 3.4rem;
+      }
+    }
+    &__nav--link {
+      font-size: 3rem;
+      font-family: "Product Sans Bold";
+      color: $default-font-color;
+      transition: all 0.2s;
+      &:hover,
+      &:focus {
+        color: $color-grey-dark;
+      }
+    }
+    &__nav--link-border {
+      border: 1px solid $default-font-color;
+      border-radius: 120px;
+      padding: 1.8rem 2.6rem;
+      transition: all 0.2s;
+      &:hover {
+        background-color: $color-white;
+      }
+    }
+    &__nav--link-icon {
+      fill: $default-font-color;
+      height: 2rem;
+      width: 4rem;
+    }
+
+    &__btn-container {
+      flex: 1 1;
+      text-align: right;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    &__search-input-container {
+      position: relative;
+    }
+    &__search-input {
+      background-color: $color-white;
+      padding: 3rem 10rem;
+      border-radius: 2rem;
+      border: none;
+      width: 74rem;
+      height: 100%;
+      margin-left: 4.5rem;
+      box-shadow: 0 0.6rem 0.6rem rgba($color-black, 0.16);
+
+      font-size: 3rem;
+      &::placeholder {
+        font-size: 3rem;
+      }
+      &:hover,
+      &:focus {
+        outline: none;
+      }
+    }
+    &__search-input-icon {
+      position: absolute;
+      top: 50%;
+      left: 11%;
+      transform: translate(-50%, -50%);
+      background-color: $color-white;
+      width: 4.9rem;
+    }
+    &__btn-login {
+      font-size: 3rem;
+      font-weight: 700;
+      color: $default-font-color;
+      transition: all 0.2s;
+
+      &:hover {
+        color: $color-grey-dark;
+      }
+    }
+    &-icon-container {
+      margin-right: 2rem;
+    }
+    &-icon {
+      display: inline-block;
+      width: 2.5rem;
+      height: auto;
+      margin-right: 2rem;
+      transition: all 0.2s;
+
+      &:hover {
+        fill: $color-grey-dark;
+      }
+    }
+  }
+}
+.sub-heading {
+  padding: 2rem 0;
+  background-color: $color-white;
+  box-shadow: 0 0.3rem 0.6rem rgba($color-black, 0.16);
+  .breadcrumb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__list {
+    }
+    &__item {
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-right: 4rem;
+      }
+    }
+    &__link {
+      font-size: 3rem;
+    }
+  }
+}

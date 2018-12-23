@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+}
+.main-component {
+  margin-top: 20rem;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: $default-font-color;
+}
+
+input {
+  outline: none;
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+::selection {
+  color: $default-font-color;
+}
+// .container {
+//   max-width: 192rem;
+// }

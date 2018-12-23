@@ -1,0 +1,50 @@
+.btn-primary {
+  &:link,
+  &:visited {
+    color: $color-white;
+    display: inline-block;
+    font-size: 3.5rem;
+    text-decoration: none;
+    background-color: $color-primary;
+    padding: 3.5rem 3rem 3rem 2.7rem;
+    border-radius: 1rem;
+    font-family: "Product Sans Bold";
+  }
+}
+.link-text {
+  &:link,
+  &:visited {
+    color: $color-tertiary;
+    border-bottom: 1px solid $color-tertiary;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    transition: all 0.2s;
+    font-family: "Product Sans Bold";
+    display: inline-block;
+  }
+  &:hover,
+  &:focus {
+    outline: 0;
+    background-color: $color-primary;
+    color: $color-white;
+  }
+}
+.btn-text {
+  &:link,
+  &:visited {
+    color: $color-primary;
+    background-color: $color-white;
+    border: 1px solid $color-primary;
+    border-radius: 1rem;
+    font-size: 3rem;
+    padding: 1rem 3.2rem 1rem 4rem;
+    transition: all 0.2s;
+    font-family: "Product Sans Bold";
+  }
+  &:hover,
+  &:focus {
+    outline: 0;
+    background-color: $color-primary;
+    color: $color-white;
+  }
+}

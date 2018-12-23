@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Product Sans";
+  src: url("../fonts/Product\ Sans\ Regular.ttf");
+}
+@font-face {
+  font-family: "Product Sans Bold";
+  src: url("../fonts/Product\ Sans\ Bold.ttf");
+}
+@font-face {
+  font-family: "Product Sans Bold Ita";
+  src: url("../fonts/Product\ Sans\ Bold\ Italic.ttf");
+}
+
+@font-face {
+  font-family: "Product Sans Ita";
+  src: url("../fonts/Product\ Sans\ Italic.ttf");
+}
+
+body {
+  font-family: "Product Sans", sans-serif;
+  /* font-size: 16px; */
+  font-weight: 400;
+  color: $default-font-color;
+  line-height: 1.7;
+}
+.heading-primary {
+  color: $default-font-color;
+  backface-visibility: hidden;
+  margin-bottom: 60px;
+  &--main {
+    display: block;
+    font-size: 7.2rem;
+    font-weight: 400;
+  }
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+}
+.heading-secondary {
+  font-size: 5rem;
+  font-family: "Product Sans Bold";
+  font-weight: 700;
+  color: $color-black;
+}
+.heading-tertiary {
+  font-size: 3.5rem;
+  color: $color-black;
+}
+.paragraph {
+  font-size: $default-font-size;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

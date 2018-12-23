@@ -11,64 +11,46 @@ import { withRouter, Link } from "react-router-dom";
 
 const MenuBar = props => {
   return (
-    <div id="menuBar">
-      {props.location.pathname != "/" ? (
-        <section className="know-more">
-          <div className="container">
-            <div className="wrapper">
-              <div className="info">
-                <Link to="/">
-                  <HelpIconOutline
-                    style={{ fill: "#fff" }}
-                    className="label-icon"
-                  />
-                  <span>Want to know more ?</span>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-      ) : null}
-
+    <section className="section-menubar">
       <div className="container">
         <div className="wrapper">
-          <div className="menu-container">
-            <ul className="menu-list">
-              <li className="list">
-                <Link to="/create-listing">
-                  <FooterMenuPost className="menu-icon" />
-                  <span>Post</span>
-                </Link>
-              </li>
-              <li className="list">
-                <a href="#">
-                  <FooterSpeedIcon className="menu-icon" />
-                  <span>Speedmanage</span>
+          <div className="sticky-menu">
+            <ul className="sticky-menu__list">
+              <li className="sticky-menu__item">
+                <a href="#" className="sticky-menu__link">
+                  <FooterMenuPost className="sticky-menu__link-icon" />
+                  <span className="sticky-menu__link-text">Post</span>
                 </a>
               </li>
-              <li className="list">
-                <a href="#">
-                  <FooterMoreIcon className="menu-icon" />
-                  <span>More</span>
+              <li className="sticky-menu__item">
+                <a href="#" className="sticky-menu__link">
+                  <FooterSpeedIcon className="sticky-menu__link-icon" />
+                  <span className="sticky-menu__link-text">Speedmanage</span>
                 </a>
               </li>
-              <li className="list">
-                <a href="#">
-                  <FooterChatIcon className="menu-icon" />
-                  <span>Chat</span>
+              <li className="sticky-menu__item">
+                <a href="#" className="sticky-menu__link">
+                  <FooterMoreIcon className="sticky-menu__link-icon more-icon" />
+                  <span className="sticky-menu__link-text">More</span>
                 </a>
               </li>
-              <li className="list">
-                <a href="#">
-                  <FooterSearchIcon className="menu-icon" />
-                  <span>Search</span>
+              <li className="sticky-menu__item">
+                <a href="#" className="sticky-menu__link">
+                  <FooterChatIcon className="sticky-menu__link-icon" />
+                  <span className="sticky-menu__link-text">Chat</span>
+                </a>
+              </li>
+              <li className="sticky-menu__item">
+                <a href="#" className="sticky-menu__link">
+                  <FooterSearchIcon className="sticky-menu__link-icon" />
+                  <span className="sticky-menu__link-text">Search</span>
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

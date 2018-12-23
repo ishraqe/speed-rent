@@ -1,0 +1,39 @@
+.section-menubar {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #e2e2e2;
+  padding: 1rem 0;
+}
+.sticky-menu {
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  &__item {
+    align-self: flex-end;
+  }
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    .more-icon {
+      margin-bottom: 2rem;
+    }
+    &-icon {
+      color: $default-font-color;
+      width: 3rem;
+      height: auto;
+      display: block;
+    }
+    &-text {
+      display: block;
+      font-size: 1.8rem;
+      color: $default-font-color;
+    }
+  }
+}

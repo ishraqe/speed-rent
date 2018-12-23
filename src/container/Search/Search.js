@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Header from "../../component/StickyHeader";
+import Header from "../../component/Header";
 import HeadingTitle from "../../component/HeadingTitle";
 import Button from "../../component/Button";
 import { HelpIcon } from "../../component/svgIcon";

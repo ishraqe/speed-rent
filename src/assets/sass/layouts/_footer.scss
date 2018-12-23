@@ -1,0 +1,22 @@
+.section-footer {
+  padding: 5rem 0;
+  //   background-color: $default-font-color;
+  display: block;
+  color: $color-white;
+}
+.main-footer {
+  &__list {
+  }
+  &__item {
+    display: flex;
+  }
+  &__icon {
+    height: 5rem;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+  &__link {
+  }
+}

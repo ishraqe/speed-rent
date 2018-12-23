@@ -1,14 +1,18 @@
 import React, { Component } from "react";
-import MenuBar from "../component/StickyMenuBar";
+import Header from "../component/Header";
+import Footer from "../component/Footer";
 import { withRouter } from "react-router-dom";
 
 class AUX extends Component {
   render() {
     return (
-      <div className="main-component">
-        {this.props.children}
-        <MenuBar />
-      </div>
+      <>
+        <Header />
+        <div>
+          <div className="main-component">{this.props.children}</div>
+        </div>
+        {/* <Footer /> */}
+      </>
     );
   }
 }
