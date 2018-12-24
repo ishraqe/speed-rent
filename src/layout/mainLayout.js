@@ -11,7 +11,7 @@ class AUX extends Component {
         <div>
           <div className="main-component">{this.props.children}</div>
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </>
     );
   }
