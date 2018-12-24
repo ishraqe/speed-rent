@@ -55,6 +55,7 @@ const Create = props => {
                   </div>
                 )}
               </div>
+
               <div className="input-group">
                 <input type="text" placeholder="landed" />
                 <CorrectIcon className="icon" />

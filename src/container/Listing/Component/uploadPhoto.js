@@ -7,10 +7,12 @@ import { faAngleRight, faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 const UploadPhoto = props => {
   return (
     <div className="uploadPhotosContainer">
-      <span className="uploadInfo">
-        Photo guideline: No watermark, minimum 4 interior photos and HD quality
-        photos.
-      </span>
+      <div className="u-center-text u-margin-bottom-small">
+        <span className="listingInfo_span">
+          Photo guideline: No watermark, minimum 4 interior <br /> photos and HD
+          quality photos.
+        </span>
+      </div>
       <form>
         <div className="uploadPhotoInputContainer">
           <div class="box ">
@@ -35,31 +37,78 @@ const UploadPhoto = props => {
             )}
           </div>
           <div class="box ">
-            <input type="file" />
-            <CameraIcon className="camera-icon" />
+            {props.imageUrls.length === 0 ? (
+              <>
+                <input
+                  type="file"
+                  onChange={e => props.fileChangedHandler(e.target.files[0])}
+                />
+                <CameraIcon className="camera-icon" />
+              </>
+            ) : (
+              <div className="prevImageContainer">
+                <img className="previewImage" src={props.imageUrls[0]} alt="" />
+                {/* <a onClick={props.removeImage}>
+                  <FontAwesomeIcon
+                    className="remove-icon"
+                    icon={faTimesCircle}
+                  />
+                </a> */}
+              </div>
+            )}
           </div>
           <div class="box ">
-            <input type="file" />
-            <CameraIcon className="camera-icon" />
+            {props.imageUrls.length === 0 ? (
+              <>
+                <input
+                  type="file"
+                  onChange={e => props.fileChangedHandler(e.target.files[0])}
+                />
+                <CameraIcon className="camera-icon" />
+              </>
+            ) : (
+              <div className="prevImageContainer">
+                <img className="previewImage" src={props.imageUrls[0]} alt="" />
+                {/* <a onClick={props.removeImage}>
+                  <FontAwesomeIcon
+                    className="remove-icon"
+                    icon={faTimesCircle}
+                  />
+                </a> */}
+              </div>
+            )}
           </div>
           <div class="box ">
-            <input type="file" />
-            <CameraIcon className="camera-icon" />
-          </div>
-          <div class="box ">
-            <input type="file" />
-            <CameraIcon className="camera-icon" />
-          </div>
-          <div class="box ">
-            <input type="file" />
-            <div className="more">
-              <PlusIcon className="more-icon" />
-              <span className="more-text">Add more photos</span>
-            </div>
+            {props.imageUrls.length === 0 ? (
+              <>
+                <input
+                  type="file"
+                  onChange={e => props.fileChangedHandler(e.target.files[0])}
+                />
+                <CameraIcon className="camera-icon" />
+              </>
+            ) : (
+              <div className="prevImageContainer">
+                <img className="previewImage" src={props.imageUrls[0]} alt="" />
+                {/* <a onClick={props.removeImage}>
+                  <FontAwesomeIcon
+                    className="remove-icon"
+                    icon={faTimesCircle}
+                  />
+                </a> */}
+              </div>
+            )}
           </div>
         </div>
-        <div className="buttonContainer">
-          <Button title="Upload" onClick={props.handleButton} />
+        <div className="buttonContainer u-center-text u-margin-top-big">
+          <a
+            type="submit"
+            onClick={props.handleButton}
+            href="#"
+            className="btn-listing"
+          >
+            Upload
+          </a>
         </div>
       </form>
     </div>

@@ -1,3 +1,71 @@
 .section-listing-progress {
-  padding: 4rem 0 9.4rem 0;
+  padding: 4rem 0 18.4rem 0;
+}
+
+.listingInfo {
+  &_span {
+    font-size: 2.5rem;
+    font-family: "Product Sans Ita";
+    line-height: 30px;
+  }
+}
+.uploadPhotosContainer {
+  .uploadPhotoInputContainer {
+    margin: 4rem 0;
+    @include clearfix;
+    display: flex;
+    justify-content: center;
+    .box {
+      height: 22.4rem;
+      width: 24.5rem;
+      background-color: #e2e2e2;
+      border-radius: 3rem;
+      position: relative;
+      float: left;
+      margin-right: 8.6rem;
+      overflow: hidden;
+      input {
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+        color: transparent;
+        opacity: 0;
+      }
+      .camera-icon {
+        height: 5.9rem;
+        width: 7.3rem;
+        fill: $color-white;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .prevImageContainer {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        .previewImage {
+          height: 100%;
+          width: 100%;
+        }
+        .remove-icon {
+          position: absolute;
+          font-size: 4rem;
+          color: $color-primary;
+          top: 1rem;
+          right: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.extraInfoContainer {
+  textarea {
+    border: 1px solid $default-font-color;
+    display: block;
+    border-radius: 1rem;
+    width: 100%;
+  }
 }

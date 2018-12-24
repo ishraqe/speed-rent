@@ -10,7 +10,7 @@ import UploadPhoto from "./Component/uploadPhoto";
 import { Helmet } from "react-helmet";
 export default class Listing extends Component {
   state = {
-    stage: 1,
+    stage: 3,
     headingTitle: "create listing",
     createListing: {
       housingTypeExtend: false,
@@ -94,7 +94,15 @@ export default class Listing extends Component {
         />
       );
     } else if (this.state.stage === 3) {
-      return <ExtraInfo />;
+      return (
+        <ExtraInfo
+          housingType={this.extendedHousingType}
+          showProperty={this.state.createListing.housingTypeExtend}
+          housingTypeValue={this.state.createListing.housingType}
+          housingTypeCheckBoxValue={this.handleHousingTypeCheckBox}
+          handleButton={this.handleStage}
+        />
+      );
     }
   }
   render() {
