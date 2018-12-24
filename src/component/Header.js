@@ -35,70 +35,74 @@ const Header = props => {
     <>
       <header className="section-heading">
         <div className="main-heading">
-          <div className="wrapper">
-            <div className="heading">
-              <div className="nav">
-                <div className="heading__nav-list-container">
-                  <Link to="/" className="heading__login-container">
-                    <SpeedIconOnly className="heading__logo" />
-                  </Link>
-                  <form action="#">
-                    <div className="heading__search-input-container ">
-                      <input
-                        className="heading__search-input"
-                        type="text"
-                        placeholder="Search by location, property name"
-                        onFocus={() => props.history.push("/search")}
-                      />
-                      <FooterSearchIcon className="heading__search-input-icon" />
-                    </div>
-                  </form>
+          <div className="container">
+            <div className="wrapper">
+              <div className="heading">
+                <div className="nav">
+                  <div className="heading__nav-list-container">
+                    <Link to="/" className="heading__login-container">
+                      <SpeedIconOnly className="heading__logo" />
+                    </Link>
+                    <form action="#">
+                      <div className="heading__search-input-container ">
+                        <input
+                          className="heading__search-input"
+                          type="text"
+                          placeholder="Search by location, property name"
+                          onFocus={() => props.history.push("/search")}
+                        />
+                        <FooterSearchIcon className="heading__search-input-icon" />
+                      </div>
+                    </form>
+                  </div>
                 </div>
-              </div>
-              <div className="heading__btn-container">
-                <ul className="heading__nav--list">
-                  <li className="heading__nav--item">
-                    <a
-                      className="heading__nav--link heading__nav--link-border"
-                      href="#"
-                    >
-                      List your Property
-                    </a>
-                  </li>
-                  <li className="heading__nav--item">
-                    <a className="heading__nav--link" href="#">
-                      SpeedImage
-                    </a>
-                  </li>
-                  <li className="heading__nav--item">
-                    <a className="heading__nav--link" href="#">
-                      Chat
-                    </a>
-                  </li>
-                  <li className="heading__nav--item">
-                    <a className="heading__nav--link" href="#">
-                      Help
-                    </a>
-                  </li>
-                  <li className="heading__nav--item">
-                    <a className="heading__nav--link" href="#">
-                      <FooterMoreIcon className="heading__nav--link-icon" />
-                    </a>
-                  </li>
-                </ul>
+                <div className="heading__btn-container">
+                  <ul className="heading__nav--list">
+                    <li className="heading__nav--item">
+                      <a
+                        className="heading__nav--link heading__nav--link-border"
+                        href="#"
+                      >
+                        List your Property
+                      </a>
+                    </li>
+                    <li className="heading__nav--item">
+                      <a className="heading__nav--link" href="#">
+                        SpeedImage
+                      </a>
+                    </li>
+                    <li className="heading__nav--item">
+                      <a className="heading__nav--link" href="#">
+                        Chat
+                      </a>
+                    </li>
+                    <li className="heading__nav--item">
+                      <a className="heading__nav--link" href="#">
+                        Help
+                      </a>
+                    </li>
+                    <li className="heading__nav--item">
+                      <a className="heading__nav--link" href="#">
+                        <FooterMoreIcon className="heading__nav--link-icon" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <section className="sub-heading">
-          <div className="wrapper">
-            <div className="breadcrumb">
-              <ul className="breadcrump__list">
-                <li className="breadcrumb__item">{path(props)}</li>
-              </ul>
-              <a href="#" className="btn-text">
-                Login
-              </a>
+          <div className="container">
+            <div className="wrapper">
+              <div className="breadcrumb">
+                <ul className="breadcrump__list">
+                  <li className="breadcrumb__item">{path(props)}</li>
+                </ul>
+                <a href="#" className="btn-text">
+                  Login
+                </a>
+              </div>
             </div>
           </div>
         </section>
