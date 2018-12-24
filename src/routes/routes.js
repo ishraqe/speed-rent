@@ -15,8 +15,8 @@ class Router extends Component {
         <Layout>
           <Switch>
             <Route exact path="/" component={Home} />
-            {/* <Route path="/search" component={Search} />
-            <Route path="/create-listing" component={Listing} /> */}
+            {/* <Route path="/search" component={Search} /> */}
+            <Route path="/create-listing" component={Listing} />
           </Switch>
         </Layout>
       </BrowserRouter>

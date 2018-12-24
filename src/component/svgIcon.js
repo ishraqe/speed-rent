@@ -976,3 +976,18 @@ export const COPYRIGHT_ICON = props => (
     </text>
   </svg>
 );
+
+export const CROSS_ICON = props => (
+  <svg
+    className={props.className}
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 40 40"
+  >
+    <path
+      id="Union_7"
+      data-name="Union 7"
+      style={{ fill: "#383838" }}
+      d="M20,23.636,3.636,40,0,36.362,16.363,20,0,3.636,3.636,0,20,16.363,36.362,0,40,3.636,23.636,20,40,36.362,36.362,40Z"
+    />
+  </svg>
+);

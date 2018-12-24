@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Header from "../component/Header";
+import HeadingTitle from "../component/HeadingTitle";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import HomeImage from "../assets/img/Home.png";
@@ -12,6 +14,9 @@ export default class Home extends Component {
   render() {
     return (
       <>
+        <Header {...this.props} info={["home"]} />
+
+        <HeadingTitle title="Home" />
         <section className="section-bilboard">
           <div className="container">
             <div className="wrapper">
@@ -45,13 +50,17 @@ export default class Home extends Component {
                           Learn more
                         </a>
                         <br />
-                        <a href="#" className="btn-primary">
+                        <Link
+                          to="/create-listing"
+                          href="#"
+                          className="btn-primary"
+                        >
                           Create listing
                           <FontAwesomeIcon
                             icon={faArrowRight}
                             className="icon-arrow"
                           />
-                        </a>
+                        </Link>
                       </div>
                       <div className="bilboard__box">
                         <h2 className="heading-secondary u-margin-bottom-small">

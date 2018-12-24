@@ -11,6 +11,19 @@
     font-family: "Product Sans Bold";
   }
 }
+.btn-listing {
+  &:link,
+  &:visited {
+    color: $color-white;
+    display: inline-block;
+    font-size: 3.5rem;
+    text-decoration: none;
+    background-color: $color-primary;
+    padding: 2.5rem 7rem;
+    border-radius: 3rem;
+    font-family: "Product Sans Bold";
+  }
+}
 .link-text {
   &:link,
   &:visited {

@@ -7,7 +7,6 @@ class AUX extends Component {
   render() {
     return (
       <>
-        <Header />
         <div>
           <div className="main-component">{this.props.children}</div>
         </div>

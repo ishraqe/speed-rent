@@ -1,6 +1,7 @@
 import React from "react";
-import { makeFirstLetterCap } from "../Utils";
 import { Link } from "react-router-dom";
+import { makeFirstLetterCap } from "../Utils";
+import Title from "./HeadingTitle";
 import {
   MainIcon,
   SpeedIconOnly,
@@ -12,7 +13,18 @@ const path = data => {
   if (data.info) {
     const { info } = data;
     return info.map((el, i) => {
-      return <a key={i}>{makeFirstLetterCap(el)}</a>;
+      if (i === 1) {
+        return (
+          <a className="breadcrumb__link" key={i}>
+            {makeFirstLetterCap(el)}
+          </a>
+        );
+      }
+      return (
+        <a className="breadcrumb__link" key={i}>
+          {makeFirstLetterCap(el)} |&nbsp;
+        </a>
+      );
     });
   }
   return null;
@@ -81,21 +93,7 @@ const Header = props => {
           <div className="wrapper">
             <div className="breadcrumb">
               <ul className="breadcrump__list">
-                <li className="breadcrumb__item">
-                  <a href="#" className="breadcrumb__link">
-                    Home |
-                  </a>
-                </li>
-                <li className="breadcrumb__item">
-                  <a href="#" className="breadcrumb__link">
-                    About |
-                  </a>
-                </li>
-                <li className="breadcrumb__item">
-                  <a href="#" className="breadcrumb__link">
-                    Something
-                  </a>
-                </li>
+                <li className="breadcrumb__item">{path(props)}</li>
               </ul>
               <a href="#" className="btn-text">
                 Login

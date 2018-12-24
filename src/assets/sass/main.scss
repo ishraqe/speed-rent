@@ -7,11 +7,15 @@
 @import "./base/utilities";
 
 @import "./components/btn";
+@import "./components/heading_title";
+@import "./components/progress-bar";
 
 @import "./layouts/grid.scss";
-@import "./layouts/heading.scss";
+@import "./layouts/heading";
 @import "./layouts/footer";
 
 @import "./layouts/menu-bar";
 
-@import "./pages/home.scss";
+@import "./pages/home";
+@import "./pages/listing";
+@import "./pages/create-listing";

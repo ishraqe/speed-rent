@@ -1,0 +1,30 @@
+.section-createListing {
+  padding: 2rem 32rem;
+}
+
+.input-group {
+  position: relative;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  input {
+    font-family: inherit;
+    color: inherit;
+    border-radius: 1rem;
+    width: 100%;
+    padding: 3rem;
+    padding-right: 5rem;
+    border: 1px solid $default-font-color;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    &::placeholder {
+      color: inherit;
+    }
+  }
+  .icon {
+    position: absolute;
+    top: 2rem;
+    height: 4.5rem;
+    right: 2rem;
+  }
+}

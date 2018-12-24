@@ -1,0 +1,49 @@
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  /*CSS counters to number the steps*/
+  counter-reset: step;
+  li {
+    list-style-type: none;
+    color: #b4b4b4;
+    font-size: 3em;
+    width: 33.33%;
+    float: left;
+    position: relative;
+    text-align: center;
+    &::before {
+      content: counter(step);
+      counter-increment: step;
+      width: 3.7rem;
+      height: 3.7rem;
+      line-height: 20px;
+      display: block;
+      font-size: 10px;
+      color: transparent;
+      background: #b4b4b4;
+      border-radius: 50%;
+      margin: 0 auto 5px auto;
+    }
+    &::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background: #b4b4b4;
+      position: absolute;
+      left: -47%;
+      top: 19px;
+      z-index: 1;
+    }
+    &:first-child:after {
+      /*connector not needed before the first step*/
+      content: none;
+    }
+  }
+  .active {
+    color: $color-primary;
+  }
+}
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background: $color-primary;
+}

@@ -104,27 +104,25 @@ export default class Listing extends Component {
           <title>Speedrent | Create Listing</title>
         </Helmet>
         <Header {...this.props} info={["home", "create listing"]} />
-        <div id="ListingContainer" className="default-margin-top">
-          <HeadingTitle
-            title={
-              this.state.stage === 1
-                ? "create listing"
-                : this.state.stage === 2
-                ? "upload photo"
-                : "Extra Info"
-            }
-          />
-          <section className="main-content">
-            <div className="container">
-              <div className="wrapper">
-                <div className="FormContent">
-                  <div className="steps">{this.renderSteps()}</div>
-                  {this.renderStage()}
-                </div>
+        <HeadingTitle
+          title={
+            this.state.stage === 1
+              ? "create listing"
+              : this.state.stage === 2
+              ? "upload photo"
+              : "Extra Info"
+          }
+        />
+        <section className="section-listing-progress">
+          <div className="container">
+            <div className="wrapper">
+              <div id="progress">
+                <div className="steps">{this.renderSteps()}</div>
+                {this.renderStage()}
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </>
     );
   }
