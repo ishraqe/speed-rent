@@ -5,7 +5,7 @@ import Header from "../component/Header";
 import HeadingTitle from "../component/HeadingTitle";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import HomeImage from "../assets/img/Home.png";
+import HomeImage from "../assets/img/home.png";
 import SpeedICon from "../assets/img/speed-withicon.png";
 
 import { Alliang, FooterSearchIcon, ArrowRight } from "../component/svgIcon";
