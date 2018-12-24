@@ -63,4 +63,84 @@
       font-family: "Product Sans";
     }
   }
+  .footer_input-container {
+    display: flex;
+    align-items: center;
+    &__input {
+      display: inline-block;
+      width: 66rem;
+      padding: 3rem 4rem;
+      border-radius: 1rem;
+      outline: none;
+      font-size: 4rem;
+      color: $default-font-color;
+      font-family: inherit;
+      &:focus {
+        outline: none;
+      }
+      &::placeholder {
+        color: #727272;
+      }
+    }
+    &-icon-wrap {
+      display: inline-block;
+      margin-left: 4rem;
+      padding: 1rem;
+      border-radius: 1rem;
+      background-color: $color-primary;
+    }
+    &-icon {
+      height: 8rem;
+    }
+  }
+  .footer_social-container {
+    display: flex;
+    align-items: center;
+    &-icon {
+      font-size: 5rem;
+      color: $color-white;
+      transition: all 0.2s;
+      &:not(:last-child) {
+        margin-right: 7rem;
+      }
+    }
+    &-fb:hover {
+      color: #3c5a99;
+    }
+    &-in:hover {
+      color: #0077b5;
+    }
+    &-insta:hover {
+      color: #e1306c;
+    }
+  }
+  .download-store-container {
+    display: flex;
+    img {
+      &:not(:last-child) {
+        margin-right: 4rem;
+      }
+    }
+  }
+  .copyright-container {
+    padding-top: 8rem;
+    text-align: center;
+
+    .copyright,
+    p {
+      font-size: 3rem;
+      font-family: "Product Sans";
+      letter-spacing: 0.6px;
+      line-height: 36px;
+    }
+    .copyright {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &__icon {
+        height: 3rem;
+        margin-right: 1rem;
+      }
+    }
+  }
 }

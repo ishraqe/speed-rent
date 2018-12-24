@@ -82,7 +82,7 @@ export default class Home extends Component {
                   <div className="bilboard__image-container">
                     <img src={HomeImage} alt="" className="bilboard__image" />
                     <div className="bilboard__partners">
-                      <img src={SpeedICon} alt="" />
+                      <img className="bilborad__image" src={SpeedICon} alt="" />
                       <h2 className="heading-secondary">
                         in participation with
                       </h2>

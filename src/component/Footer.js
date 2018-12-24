@@ -13,7 +13,9 @@ import {
   LanguageIcon,
   MapIcon,
   EnvelopeIcon,
-  TelephoneIcon
+  TelephoneIcon,
+  RSSICON,
+  COPYRIGHT_ICON
 } from "../component/svgIcon";
 
 const Footer = props => {
@@ -251,9 +253,54 @@ const Footer = props => {
           </div>
           <div className="secction-about-speed">
             <div className="wrapper">
-              <div className="col-1-of-2">lorem10 </div>
-              <div className="col-1-of-2">lorem10 </div>
+              <div className="col-1-of-2">
+                <h2 className="footer-heading u-margin-bottom-medium">
+                  Subscribe to get exclusive insights!
+                </h2>
+                <div className="footer_input-container u-margin-bottom-big">
+                  <input
+                    type="text"
+                    className="footer_input-container__input"
+                    placeholder="Your email address"
+                  />
+                  <span className="footer_input-container-icon-wrap">
+                    <RSSICON className="footer_input-container-icon" />
+                  </span>
+                </div>
+                <div className="footer_social-container">
+                  <FontAwesomeIcon
+                    icon={faFacebookF}
+                    className="footer_social-container-icon footer_social-container-fb"
+                  />
+                  <FontAwesomeIcon
+                    icon={faLinkedinIn}
+                    className="footer_social-container-icon footer_social-container-in"
+                  />
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    className="footer_social-container-icon footer_social-container-insta"
+                  />
+                </div>
+              </div>
+              <div className="col-1-of-2">
+                <h2 className="footer-heading u-margin-bottom-medium">
+                  Download the App here!
+                </h2>
+                <div className="download-store-container">
+                  <img src={require("../assets/img/AppStore.png")} alt="" />
+                  <img src={require("../assets/img/GooglePlay.png")} alt="" />
+                </div>
+              </div>
             </div>
+          </div>
+          <div className="copyright-container">
+            <span className="copyright">
+              <COPYRIGHT_ICON className="copyright__icon" /> 2018 Speedrent
+            </span>
+            <p>
+              All images are the property of their respective owner | Privacy
+              Policy
+            </p>
           </div>
         </div>
       </div>

@@ -4,6 +4,7 @@
   top: 0;
   left: 0;
   z-index: 10;
+  background-color: $color-white;
 }
 .section-bilboard {
   padding: 6rem 0;
@@ -26,16 +27,17 @@
       top: 12rem;
       right: 0;
       padding: 6px;
-      &__partners {
-        &-title {
-          font-size: 8rem;
-          text-transform: uppercase;
-        }
-        .partner-logo {
-          height: 7rem;
-        }
+      text-align: left;
+      padding-left: 28rem;
+      .bilboard__image {
+        height: 7rem;
+      }
+      .partner-logo {
+        height: 7rem;
+        display: block;
       }
     }
+
     &__info {
       display: flex;
       flex-direction: column;
