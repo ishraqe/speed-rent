@@ -3,9 +3,9 @@ import { LeftArrowIcon, CROSS_ICON } from "./svgIcon";
 import { makeFirstLetterCap } from "../Utils";
 import { withRouter } from "react-router-dom";
 const HeadingTitle = props => {
-  // if (props.location.pathname == "/") {
-  //   return null;
-  // }
+  if (props.location.pathname == "/") {
+    return null;
+  }
   return (
     <div className="section-headingTitle">
       <div className="container">

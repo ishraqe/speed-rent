@@ -13,16 +13,16 @@ const path = data => {
   if (data.info) {
     const { info } = data;
     return info.map((el, i) => {
-      if (i === 1) {
+      if (i > 0) {
         return (
           <a className="breadcrumb__link" key={i}>
-            {makeFirstLetterCap(el)}
+            &nbsp; |&nbsp; {makeFirstLetterCap(el)}
           </a>
         );
       }
       return (
         <a className="breadcrumb__link" key={i}>
-          {makeFirstLetterCap(el)} |&nbsp;
+          {makeFirstLetterCap(el)}
         </a>
       );
     });
