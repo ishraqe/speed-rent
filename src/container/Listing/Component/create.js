@@ -57,21 +57,21 @@ const Create = props => {
               </div>
 
               <div className="input-group">
-                <input type="text" placeholder="landed" />
+                <input type="text" placeholder="Property Name" />
                 <CorrectIcon className="icon" />
               </div>
               <div className="input-group">
-                <input type="text" placeholder="landed" />
+                <input type="text" placeholder="Price (RM)" />
                 <InCorrectIcon className="icon" />
               </div>
             </div>
             <div className="col-1-of-2">
               <div className="input-group">
-                <input type="text" placeholder="landed" />
+                <input type="text" placeholder="Address" />
                 <CorrectIcon className="icon" />
               </div>
               <div className="input-group">
-                <input type="text" placeholder="landed" />
+                <input type="text" placeholder="Post Code" />
                 <InCorrectIcon className="icon" />
               </div>
             </div>

@@ -12,68 +12,22 @@ export default class SearchContainer extends Component {
           <title>Speedrent | Search Property</title>
         </Helmet>
         <Header {...this.props} info={["home", "search house"]} />
-        <div id="searchContainer" className="default-margin-top">
-          <HeadingTitle title="search house" />
-          <section className="main-content">
-            <div className="container">
+        <HeadingTitle title="search house" />
+        <div classname="searchContainer">
+          <div className="container">
+            <form action="#">
               <div className="wrapper">
-                <div className="searchContent">
-                  <form>
-                    <div className="input-group">
-                      <label htmlFor="" className="label">
-                        Location / property name
-                        <HelpIcon
-                          style={{ fill: "none" }}
-                          className="label-icon"
-                        />
-                      </label>
-                      <input
-                        type="text"
-                        placeholder="Type by location, property name"
-                        className="form-input"
-                      />
-                    </div>
-                    <div className="input-group">
-                      <label htmlFor="" className="label">
-                        Housing Type
-                        <HelpIcon
-                          style={{ fill: "none" }}
-                          className="label-icon"
-                        />
-                      </label>
-                      <select name="" id="" className="form-select">
-                        <option value="">Any</option>
-                        <option value="">Another</option>
-                        <option value="">Second</option>
-                        <option value="">Make me</option>
-                      </select>
-                    </div>
-                    <div className="input-group">
-                      <label htmlFor="" className="label">
-                        Price (RM)
-                      </label>
-                      <div className="range-input-container">
-                        <input
-                          className="range-input"
-                          type="text"
-                          placeholder="0"
-                        />
-                        <span className="diff">to</span>
-                        <input
-                          className="range-input"
-                          type="text"
-                          placeholder="5,000"
-                        />
-                      </div>
-                    </div>
-                    <div className="button-contaner">
-                      <Button title="Search" />
-                    </div>
-                  </form>
+                <div className="col-1-of-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
+                  tempore!
+                </div>
+                <div className="col-1-of-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
+                  tempore!
                 </div>
               </div>
-            </div>
-          </section>
+            </form>
+          </div>
         </div>
       </>
     );

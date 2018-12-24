@@ -48,6 +48,7 @@ const Header = props => {
                         className="heading__search-input"
                         type="text"
                         placeholder="Search by location, property name"
+                        onFocus={() => props.history.push("/search")}
                       />
                       <FooterSearchIcon className="heading__search-input-icon" />
                     </div>

@@ -15,7 +15,6 @@ export default class Home extends Component {
     return (
       <>
         <Header {...this.props} info={["home"]} />
-
         <HeadingTitle title="Home" />
         <section className="section-bilboard">
           <div className="container">
@@ -30,6 +29,7 @@ export default class Home extends Component {
                             className="bilboard__search-input"
                             type="text"
                             placeholder="Search by location, property name"
+                            onFocus={() => this.props.history.push("/search")}
                           />
                           <FooterSearchIcon className="bilboard__search-input-icon" />
                         </div>

@@ -10,11 +10,29 @@ import UploadPhoto from "./Component/uploadPhoto";
 import { Helmet } from "react-helmet";
 export default class Listing extends Component {
   state = {
-    stage: 3,
+    stage: 1,
     headingTitle: "create listing",
     createListing: {
       housingTypeExtend: false,
       housingType: "Housing Type"
+    },
+    extraInfo: {
+      furnishing: {
+        open: false,
+        data: ["Fully Furnish", "Partially Furnish", "No Furnish"]
+      },
+      bedroom: {
+        open: false,
+        data: [1, 2, 3]
+      },
+      parking: {
+        open: false,
+        data: [1, 2, 3]
+      },
+      bathroom: {
+        open: false,
+        data: [1, 2, 3]
+      }
     },
     uploadPhotos: []
   };
@@ -51,6 +69,7 @@ export default class Listing extends Component {
       }
     });
   };
+
   handleHousingTypeCheckBox = value => {
     this.setState({
       createListing: {
