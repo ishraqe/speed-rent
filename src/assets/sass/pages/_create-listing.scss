@@ -4,21 +4,93 @@
 
 .input-group {
   position: relative;
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid $default-font-color;
   &:not(:last-child) {
     margin-bottom: 2rem;
   }
   input {
     font-family: inherit;
     color: inherit;
-    border-radius: 1rem;
-    width: 100%;
+    font-size: 2.5rem;
     padding: 3rem;
     padding-right: 5rem;
-    border: 1px solid $default-font-color;
-    font-size: 2.5rem;
+
     line-height: 3rem;
     &::placeholder {
       color: inherit;
+    }
+  }
+  .expendadInput {
+    background-color: #f3f3f3;
+    padding: 2rem 0;
+    .ex-container {
+      display: block;
+      position: relative;
+      padding: 1.5rem 10.5rem;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      font-size: 2.5rem;
+      font-family: "Product Sans";
+      color: #727272;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid #727272;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    /* Hide the browser's default checkbox */
+    .ex-container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+    /* Create a custom checkbox */
+    .checkmark {
+      position: absolute;
+      top: 1.4rem;
+      left: 4rem;
+      height: 4rem;
+      width: 4rem;
+      background-color: #fff;
+      border-radius: 4px;
+      border: 1px solid #727277;
+    }
+    /* On mouse-over, add a grey background color */
+    .ex-container:hover input ~ .checkmark {
+      background-color: #fff;
+    }
+    /* When the checkbox is checked, add a blue background */
+    .ex-container input:checked ~ .checkmark {
+      background-color: $color-primary;
+      border-color: $color-primary;
+    }
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    /* Show the checkmark when checked */
+    .ex-container input:checked ~ .checkmark:after {
+      display: block;
+    }
+    /* Style the checkmark/indicator */
+    .ex-container .checkmark:after {
+      left: 10px;
+      top: 4px;
+      width: 17px;
+      height: 19px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
     }
   }
   .icon {
@@ -26,5 +98,9 @@
     top: 2rem;
     height: 4.5rem;
     right: 2rem;
+  }
+  .down-icon {
+    height: 1.5rem;
+    top: 3.5rem;
   }
 }
