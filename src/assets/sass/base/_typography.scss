@@ -45,6 +45,14 @@ body {
   font-weight: 700;
   color: $color-black;
 }
+.heading-secondary-sub {
+  display: inline-block;
+  font-size: 4rem;
+  font-family: "Product Sans Bold";
+  font-weight: 700;
+  line-height: 48px;
+  color: $color-black;
+}
 .heading-tertiary {
   font-size: 3.5rem;
   color: $color-black;
