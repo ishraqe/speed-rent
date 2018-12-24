@@ -8,7 +8,7 @@ import HomeImage from "../assets/img/Home.png";
 import SpeedICon from "../assets/img/speed-withicon.png";
 
 import { Alliang, FooterSearchIcon, ArrowRight } from "../component/svgIcon";
-
+// Home component
 export default class Home extends Component {
   render() {
     return (
