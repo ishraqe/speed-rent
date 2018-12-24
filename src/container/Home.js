@@ -4,7 +4,9 @@ import { faAngleRight, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import HomeImage from "../assets/img/Home.png";
-import { PartnerIcon, FooterSearchIcon } from "../component/svgIcon";
+import SpeedICon from "../assets/img/speed-withicon.png";
+
+import { Alliang, FooterSearchIcon, ArrowRight } from "../component/svgIcon";
 
 export default class Home extends Component {
   render() {
@@ -79,11 +81,44 @@ export default class Home extends Component {
                 <div className="col-1-of-2">
                   <div className="bilboard__image-container">
                     <img src={HomeImage} alt="" className="bilboard__image" />
-                    <div className="bilboard__partnership" />
+                    <div className="bilboard__partners">
+                      <img src={SpeedICon} alt="" />
+                      <h2 className="heading-secondary">
+                        in participation with
+                      </h2>
+                      <Alliang className="partner-logo" />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+        <section className="section-menu">
+          <div className="container">
+            <ul className="bigmenu">
+              <li className="bigmenu__item">
+                <a href="#" className="bigmenu__link">
+                  <h2 className="heading-secondary">Blog</h2>
+
+                  <ArrowRight className="bigmenu__icon" />
+                </a>
+              </li>
+              <li className="bigmenu__item">
+                <a href="#" className="bigmenu__link">
+                  <h2 className="heading-secondary">Hot Areas</h2>
+
+                  <ArrowRight className="bigmenu__icon" />
+                </a>
+              </li>
+              <li className="bigmenu__item">
+                <a href="#" className="bigmenu__link">
+                  <h2 className="heading-secondary">Media</h2>
+
+                  <ArrowRight className="bigmenu__icon" />
+                </a>
+              </li>
+            </ul>
           </div>
         </section>
       </>

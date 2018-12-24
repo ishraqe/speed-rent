@@ -15,10 +15,26 @@
     &__info,
     &__image-container {
       height: 80rem;
+      position: relative;
     }
     &__image {
       height: 100%;
       width: 100%;
+    }
+    &__partners {
+      position: absolute;
+      top: 12rem;
+      right: 0;
+      padding: 6px;
+      &__partners {
+        &-title {
+          font-size: 8rem;
+          text-transform: uppercase;
+        }
+        .partner-logo {
+          height: 7rem;
+        }
+      }
     }
     &__info {
       display: flex;
@@ -70,6 +86,23 @@
       justify-content: space-between;
       align-items: center;
       flex: 1;
+    }
+  }
+}
+.section-menu {
+  padding: 8rem 0 9rem 0;
+  .bigmenu {
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+    }
+    .heading-secondary {
+      width: 23rem;
+    }
+    &__icon {
+      height: 5rem;
+      margin-left: 24rem;
     }
   }
 }
