@@ -4,7 +4,6 @@ import { faAngleRight, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Header from "../component/Header";
 import HeadingTitle from "../component/HeadingTitle";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
 import HomeImage from "../assets/img/Home.png";
 import SpeedICon from "../assets/img/speed-withicon.png";
 
